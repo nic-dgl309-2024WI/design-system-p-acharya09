@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="design-system.css">
 </head>
 <body>
-    <!-- Top Navbar -->
-    <nav class="navbar navbar--top">
-        <div class="navbar__logo">
-            <a href="index.html">Design System</a>
+    <!-- Logo and Hamburger Menu -->
+    <nav class="navbar">
+        <div class="navbar navbar--top">
+            <div class="navbar__logo">
+                <a href="index.html">Design System</a>
+            </div>
+            <button class="navbar__hamburger-icon">&#9776;</button>
         </div>
-        <button class="navbar__hamburger-icon">&#9776;</button>
-        <ul class="navbar__nav-links">
-            <li><a href="about-me.html">About Me</a></li>
-            <li><a href="#">Demo Site</a></li>
-        </ul>
+    
+        <!-- Top Navbar -->
+        <div class="navbar navbar--top">
+            <ul class="navbar__nav-links">
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="#">Demo Site</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Side Navbar -->
@@ -67,6 +73,7 @@
             </ul>
         </nav>
     </aside>
+    <button class="close-button">&#10006;</button>
     <script src="design-system.js"></script>
 </body>
 </html>
