@@ -11,14 +11,22 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: var(--clr-primary-bg); /* Set primary background color */
+        color: var(--clr-primary-text); /* Set primary text color */
     }
     .navbar__logo {
         order: -1;
+    }
+
+    .sidebar{
+        background-color: var(--clr-secondary-bg); /* Set secondary background color */
+        color: var(--clr-secondary-text); /* Set secondary text color */
     }
 }
 
 /* Desktop View */
 @media only screen and (min-width: 769px) {
+
     .navbar__hamburger-icon {
         display: none;
     }
@@ -27,7 +35,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: var(--clr-primary-bg); /* Set primary background color */
+        color: var(--clr-primary-text); /* Set primary text color */
     }
+
     .navbar__logo {
         order: -1;
     }
@@ -39,5 +50,7 @@
     .sidebar {
         display: block;
         margin-top: 20px;
+        background-color: var(--clr-secondary-bg); /* Set secondary background color */
+        color: var(--clr-secondary-text); /* Set secondary text color */
     }
 }
