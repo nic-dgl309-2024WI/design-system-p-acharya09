@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const hamburgerIcon = document.querySelector('.navbar__hamburger-icon');
-    const closeButton = document.querySelector('.close-button');
+    const closeButton = document.querySelector('.navbar__close-button');
     const navLinks = document.querySelector('.navbar__nav-links');
     const sidebar = document.querySelector('.sidebar');
 

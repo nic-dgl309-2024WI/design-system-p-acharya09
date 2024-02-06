@@ -1,7 +1,7 @@
 /* Hide initially */
 .navbar__nav-links,
 .sidebar,
-.close-button {
+.navbar__close-button {
     display: none;
 }
 
