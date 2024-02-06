@@ -5,6 +5,12 @@
     display: none;
 }
 
+.active:hover{
+    color: var(--clr-accent);
+}
+
+
+
 /* Mobile View */
 @media only screen and (max-width: 768px) {
     .navbar--top {
@@ -49,8 +55,62 @@
     }
     .sidebar {
         display: block;
-        margin-top: 20px;
         background-color: var(--clr-secondary-bg); /* Set secondary background color */
         color: var(--clr-secondary-text); /* Set secondary text color */
+    }
+
+    /* Color Swatches */
+    .container {
+        display: flex;
+        align-items: flex-start; /* Align items at the start of the container */
+        justify-content: space-between; /* Distribute items evenly along the main axis */
+    }
+    
+    .color{
+        display: flex;
+    }
+
+    .color-swatch {
+        width: 200px;
+        height: 150px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+    }
+    
+    .color-swatch__name {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    
+    .color-swatch__code {
+        font-size: 12px;
+        color: #666;
+    }
+    
+    .color-swatch--primary-bg {
+        background-color: #7CB5EE;
+    }
+    
+    .color-swatch--secondary-bg {
+        background-color: #BED0EC;
+    }
+    
+    .color-swatch--accent {
+        background-color: #0072C6;
+    }
+    
+    .color-swatch--primary-text {
+        background-color: #0B0B0B;
+        color: #fff;
+    }
+    
+    .color-swatch--secondary-text {
+        background-color: #FFFFFF;
+        color: #0B0B0B;
     }
 }
