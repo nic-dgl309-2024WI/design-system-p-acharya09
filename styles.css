@@ -53,3 +53,43 @@ a {
   text-decoration: none;
 }
 
+/* Utility class */
+.u-h1 {
+  font-family: var(--heading-font-family);
+  font-size: var(--h1-font-size);
+  font-weight: var(--heading-font-weight-regular);
+  line-height: calc(var(--h1-font-size) * var(--heading-line-height));
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+.u-h2 {
+  font-family: var(--heading-font-family);
+  font-size: var(--h2-font-size);
+  font-weight: var(--heading-font-weight-regular);
+  line-height: calc(var(--h2-font-size) * var(--heading-line-height));
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+.u-h3 {
+  font-family: var(--heading-font-family);
+  font-size: var(--h3-font-size);
+  font-weight: var(--heading-font-weight-regular);
+  line-height: calc(var(--h3-font-size) * var(--heading-line-height));
+  letter-spacing: var(--heading-letter-spacing);
+}
+
+.u-para{
+  font-family: var(--body-font-family);
+  font-size: var(--paragraph-font-size);
+  font-weight: var(--body-font-weight-regular);
+  line-height: calc(var(--paragraph-font-size) * var(--paragraph-line-height));
+  letter-spacing: var(--paragraph-letter-spacing);
+}
+
+.u-sm-text{
+  font-family: var(--body-font-family);
+  font-size: var(--small-font-size);
+  font-weight: var(--body-font-weight-regular);
+  line-height: calc(var(--small-font-size) * var(--small-line-height));
+  letter-spacing: var(--paragraph-letter-spacing);
+}
