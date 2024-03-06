@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Design System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="design-system.css">
 </head>
+
 <body>
     <!-- Logo and Hamburger Menu -->
     <nav class="navbar">
         <div class="navbar navbar--top">
-            <div class="navbar__logo">
+            <div class="navbar__logo u-h1">
                 <a href="index.html">Design System</a>
             </div>
             <button class="navbar__hamburger-icon">&#9776;</button>
             <button class="navbar__close-button">&#10006;</button>
         </div>
-    
+
         <!-- Top Navbar -->
         <div class="navbar navbar--top">
-            <ul class="navbar__nav-links">
+            <ul class="navbar__nav-links u-h3">
                 <li><a href="about-me.html">About Me</a></li>
                 <li><a href="#">Demo Site</a></li>
             </ul>
@@ -30,16 +36,16 @@
     <!-- Side Navbar -->
     <aside class="sidebar">
         <nav class="sidebar__section">
-            <h2 class="sidebar__section-heading">Branding</h2>
-            <ul class="sidebar__nav">
-                <li><a href="#colors">01 Colours</a></li>
-                <li><a href="#typography">02 Typography</a></li>
+            <h2 class="sidebar__section-heading u-h2">Branding</h2>
+            <ul class="sidebar__nav u-h3">
+                <li><a href="colours.html">01 Colours</a></li>
+                <li><a href="typography.html">02 Typography</a></li>
                 <li><a href="#logo">03 Logo</a></li>
             </ul>
         </nav>
         <nav class="sidebar__section">
-            <h2 class="sidebar__section-heading">Utilities</h2>
-            <ul class="sidebar__nav">
+            <h2 class="sidebar__section-heading u-h2">Utilities</h2>
+            <ul class="sidebar__nav u-h3">
                 <li><a href="#spacing">04 Spacing</a></li>
                 <li><a href="#containers">05 Containers</a></li>
                 <li><a href="#images">06 Images</a></li>
@@ -48,16 +54,16 @@
             </ul>
         </nav>
         <nav class="sidebar__section">
-            <h2 class="sidebar__section-heading">Navigation</h2>
-            <ul class="sidebar__nav">
+            <h2 class="sidebar__section-heading u-h2">Navigation</h2>
+            <ul class="sidebar__nav u-h3">
                 <li><a href="#navbars">09 Navbars</a></li>
                 <li><a href="#breadcrumbs">10 Breadcrumbs</a></li>
                 <li><a href="#pagination">11 Pagination</a></li>
             </ul>
         </nav>
         <nav class="sidebar__section">
-            <h2 class="sidebar__section-heading">Blocks</h2>
-            <ul class="sidebar__nav">
+            <h2 class="sidebar__section-heading u-h2">Blocks</h2>
+            <ul class="sidebar__nav u-h3">
                 <li><a href="#hero">12 Hero</a></li>
                 <li><a href="#carousel">13 Carousel</a></li>
                 <li><a href="#slats">14 Slats</a></li>
@@ -65,8 +71,8 @@
             </ul>
         </nav>
         <nav class="sidebar__section">
-            <h2 class="sidebar__section-heading">Components</h2>
-            <ul class="sidebar__nav">
+            <h2 class="sidebar__section-heading u-h2">Components</h2>
+            <ul class="sidebar__nav u-h3">
                 <li><a href="#cards">16 Cards</a></li>
                 <li><a href="#forms">17 Forms</a></li>
                 <li><a href="#accordion">18 Accordion</a></li>
@@ -76,4 +82,5 @@
     </aside>
     <script src="design-system.js"></script>
 </body>
+
 </html>

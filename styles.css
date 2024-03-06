@@ -15,8 +15,8 @@
     --h1-font-size: 48px;
     --h2-font-size: 36px;
     --h3-font-size: 24px;
-    --paragraph-font-size: 18px;
-    --small-font-size: 16px;
+    --paragraph-font-size: 16px;
+    --small-font-size: 14px;
 
   /* font weight declare */
     --heading-font-weight-regular: 500;
@@ -57,7 +57,7 @@ a {
 .u-h1 {
   font-family: var(--heading-font-family);
   font-size: var(--h1-font-size);
-  font-weight: var(--heading-font-weight-regular);
+  font-weight: var(--heading-font-weight-bold);
   line-height: calc(var(--h1-font-size) * var(--heading-line-height));
   letter-spacing: var(--heading-letter-spacing);
 }
@@ -65,7 +65,7 @@ a {
 .u-h2 {
   font-family: var(--heading-font-family);
   font-size: var(--h2-font-size);
-  font-weight: var(--heading-font-weight-regular);
+  font-weight: var(--heading-font-weight-bold);
   line-height: calc(var(--h2-font-size) * var(--heading-line-height));
   letter-spacing: var(--heading-letter-spacing);
 }

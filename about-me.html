@@ -1,46 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-  </head>
-  <body>
-      <!-- Name and Title -->
-    <h1>Hi! My name is Prashant Acharya.</h1>
-    <h2>I am a Web Developer.</h2>
-    <!-- Photo -->
-    <img
-      src="images/temp_pic.jpg"
-      alt="Prashant Acharya Image"
-      style="width: 500px; height: 500px"
-    />
-    <!-- Couldn't find fitting image for this section  -->
 
-    <!-- Short biography -->
-    <p>
-      Web developer specializing in front-end development. Knowledge in various programming languages, frameworks, and platforms. Progressive, ambitious, and enthusiastic developer, continuously seeking challenges and skill-set improvement.
-      Currently, studying PGD (Web Development Stream) at North Island College.
-      Good communication skills and experience in handling clients and coordinating with other team members.
-    </p>
-    <!-- List of your favourite web development tools. -->
-    <p>My favourite tools are</p>
-    <ul>
-      <li>Text Editor: VS Code, Sublime Text</li>
-      <li>Version Control: GIT</li>
-      <li>Programming Language: JavaScript, PHP</li>
-      <li>Database: MySQL</li>
-      <li>Preferred Browsers: Chrome</li>
-    </ul>
-    <!-- List of strongest web development skills. -->
-    <p>My skills include</p>
-    <ul>
-      <li>Front-End Development</li>
-      <li>Back-End Development</li>
-      <li>Testing and Quality Assurance</li>
-      <li>Communication</li>
-      <li>Teamwork</li>
-    </ul>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="design-system.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar navbar--top">
+      <div class="navbar__logo u-h1">
+        <a href="index.html">Design System</a>
+      </div>
+      <button class="navbar__hamburger-icon">&#9776;</button>
+      <button class="navbar__close-button">&#10006;</button>
+    </div>
+
+    <!-- Top Navbar -->
+    <div class="navbar navbar--top">
+      <ul class="navbar__nav-links">
+        <li><a href="about-me.html">About Me</a></li>
+        <li><a href="#">Demo Site</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Name and Title -->
+  <h1 class="u-h2">Hi! My name is Prashant Acharya.</h1>
+  <h2 class="u-h3">I am a Web Developer.</h2>
+  <!-- Photo -->
+  <img src="images/temp_pic.jpg" alt="Prashant Acharya Image" style="width: 500px; height: 500px" />
+  <!-- Couldn't find fitting image for this section  -->
+
+  <!-- Short biography -->
+  <p class="u-para">
+    Web developer specializing in front-end development. Knowledge in various programming languages, frameworks, and
+    platforms. Progressive, ambitious, and enthusiastic developer, continuously seeking challenges and skill-set
+    improvement.
+    Currently, studying PGD (Web Development Stream) at North Island College.
+    Good communication skills and experience in handling clients and coordinating with other team members.
+  </p>
+  <!-- List of your favourite web development tools. -->
+  <h3 class="u-h3">My favourite tools are</h3>
+  <ul class="u-para">
+    <li>Text Editor: VS Code, Sublime Text</li>
+    <li>Version Control: GIT</li>
+    <li>Programming Language: JavaScript, PHP</li>
+    <li>Database: MySQL</li>
+    <li>Preferred Browsers: Chrome</li>
+  </ul>
+  <!-- List of strongest web development skills. -->
+  <h3 class="u-h3">My skills include</h3>
+  <ul class="u-para">
+    <li>Front-End Development</li>
+    <li>Back-End Development</li>
+    <li>Testing and Quality Assurance</li>
+    <li>Communication</li>
+    <li>Teamwork</li>
+  </ul>
+  <script src="design-system.js"></script>
+</body>
+
 </html>
