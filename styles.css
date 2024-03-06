@@ -1,10 +1,37 @@
-/* Declare color variable */
+/* Global style */
 :root {
+  /* color variable declare */
     --clr-primary-bg: #7CB5EE; /* primary background color */
     --clr-secondary-bg: #BED0EC; /*  secondary background color */
     --clr-accent: #0072C6; /* accent color */
     --clr-primary-text: #0B0B0B; /* dark text color */
     --clr-secondary-text: #FFFFFF; /* white text color */
+
+  /* fonts declare */
+    --heading-font-family: 'Roboto', sans-serif;
+    --body-font-family: 'Montserrat', sans-serif;
+
+  /* font size declare */
+    --h1-font-size: 48px;
+    --h2-font-size: 36px;
+    --h3-font-size: 24px;
+    --paragraph-font-size: 18px;
+    --small-font-size: 16px;
+
+  /* font weight declare */
+    --heading-font-weight-regular: 500;
+    --heading-font-weight-bold: 700;
+    --body-font-weight-regular: 400;
+    --body-font-weight-medium: 500;
+
+  /* line height declare */
+    --heading-line-height: 1.6;
+    --paragraph-line-height: 1.5;
+    --small-line-height: 1.4;
+
+  /* heading color declare */
+    --heading-letter-spacing: 0;
+    --paragraph-letter-spacing: 0.01em;
   }
 
 /* CSS reset */
@@ -25,3 +52,4 @@ li {
 a {
   text-decoration: none;
 }
+
