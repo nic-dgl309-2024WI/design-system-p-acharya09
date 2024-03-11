@@ -10,6 +10,11 @@
     color: var(--clr-accent); /* Set primary text color */
 }
 
+.border-strong {
+    border-width: 2px;
+    border-color: var(--clr-primary-text);
+    border-style: solid;
+}
 
 
 /* Mobile View */
@@ -28,6 +33,9 @@
     .sidebar{
         background-color: var(--clr-secondary-bg); /* Set secondary background color */
         color: var(--clr-secondary-text); /* Set secondary text color */
+        position: sticky;
+        top: 0;
+        left: 0;
     }
 
     .color-swatch {
@@ -102,6 +110,9 @@
         display: block;
         background-color: var(--clr-secondary-bg); /* Set secondary background color */
         color: var(--clr-secondary-text); /* Set secondary text color */
+        position: sticky;
+        top: 0;
+        left: 0;
     }
 
     /* Color Swatches */
@@ -143,13 +154,13 @@
     }
 
     .spacing {
-        width: 2000px;
-        height: 400px;
+        width: 2500px;
+        height: 1600px;
         margin: 100px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         font-size: 18px;
