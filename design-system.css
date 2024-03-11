@@ -16,6 +16,12 @@
     border-style: solid;
 }
 
+.border-dotted {
+    border-width: 2px;
+    border-color: var(--clr-primary-text);
+    border-style: dotted;
+}
+
 
 /* Mobile View */
 @media only screen and (max-width: 768px) {
