@@ -22,15 +22,26 @@
     border-style: dotted;
 }
 
+img{
+    width: 500px; 
+    height: 500px; 
+    border-radius: 25px;
+}
+
 
 /* Mobile View */
 @media only screen and (max-width: 768px) {
+    img{
+        width: 100%;
+        height: calc(50% * 100vw);
+    }
     .navbar--top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: var(--clr-primary-bg); /* Set primary background color */
         color: var(--clr-primary-text); /* Set primary text color */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     .navbar__logo {
         order: -1;
@@ -42,6 +53,11 @@
         position: sticky;
         top: 0;
         left: 0;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
     }
 
     .color-swatch {
@@ -102,6 +118,7 @@
         align-items: center;
         background-color: var(--clr-primary-bg); /* Set primary background color */
         color: var(--clr-primary-text); /* Set primary text color */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     .navbar__logo {

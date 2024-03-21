@@ -4,12 +4,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <title>About Me</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="design-system.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,14 +30,16 @@
   </nav>
 
   <!-- Name and Title -->
-  <h1 class="u-h2">Hi! My name is Prashant Acharya.</h1>
-  <h2 class="u-h3">I am a Web Developer.</h2>
-  <!-- Photo -->
-  <img src="images/temp_pic.jpg" alt="Prashant Acharya Image" style="width: 500px; height: 500px" />
-  <!-- Couldn't find fitting image for this section  -->
+  <section class="bg-secondary l-flex l-flex-column l-flex-center l-m-3" style="border-radius: 25px;">
+    <h1 class="u-h2 l-m-1">Hi! My name is Prashant Acharya.</h1>
+    <h2 class="u-h3 l-m-1">I am a Web Developer.</h2>
+    <!-- Photo -->
+    <img src="images/temp_pic.jpg" alt="Prashant Acharya Image" class="l-m-1" />
+    <!-- Couldn't find fitting image for this section  -->
+  </section>
 
   <!-- Short biography -->
-  <p class="u-para">
+  <p class="u-para l-m-3">
     Web developer specializing in front-end development. Knowledge in various programming languages, frameworks, and
     platforms. Progressive, ambitious, and enthusiastic developer, continuously seeking challenges and skill-set
     improvement.
@@ -47,23 +47,47 @@
     Good communication skills and experience in handling clients and coordinating with other team members.
   </p>
   <!-- List of your favourite web development tools. -->
-  <h3 class="u-h3">My favourite tools are</h3>
-  <ul class="u-para">
-    <li>Text Editor: VS Code, Sublime Text</li>
-    <li>Version Control: GIT</li>
-    <li>Programming Language: JavaScript, PHP</li>
-    <li>Database: MySQL</li>
-    <li>Preferred Browsers: Chrome</li>
-  </ul>
+  <section class ="bg-secondary l-flex l-flex-column l-flex-center l-m-3" style="border-radius: 25px;">
+    <h3 class="u-h3 l-m-1">My favourite tools are</h3>
+    <ul class="u-para l-m-1">
+      <li><span class="text-accent">Text Editor:</span> VS Code, Sublime Text</li>
+      <li><span class="text-accent">Version Control:</span> GIT</li>
+      <li><span class="text-accent">Programming Language:</span> JavaScript, PHP</li>
+      <li><span class="text-accent">Database:</span> MySQL</li>
+      <li><span class="text-accent">Preferred Browsers:</span> Chrome</li>
+    </ul>
+  </section>
   <!-- List of strongest web development skills. -->
-  <h3 class="u-h3">My skills include</h3>
-  <ul class="u-para">
-    <li>Front-End Development</li>
-    <li>Back-End Development</li>
-    <li>Testing and Quality Assurance</li>
-    <li>Communication</li>
-    <li>Teamwork</li>
-  </ul>
+  <section class ="l-flex l-flex-column l-flex-center l-m-3">
+    <h3 class="u-h3 l-m-1">My skills include</h3>
+    <ul class="u-para l-m-1">
+      <li>Front-End Development</li>
+      <li>Back-End Development</li>
+      <li>Testing and Quality Assurance</li>
+      <li>Communication</li>
+      <li>Teamwork</li>
+    </ul>
+  </section>
+
+  <footer class="footer l-flex l-flex-row l-flex-around l-m-1" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+    <div class="l-flex l-flex-column">
+      <h3 class="u-h3 l-m-1">Contact Information</h3>
+      <div class="l-flex l-flex-column">
+        <p class="u-para l-ml-1"><span class="text-accent">Email:</span>email@email.com</p>
+        <p class="u-para l-ml-1"><span class="text-accent">Phone:</span>0123456789</p>
+        <p class="u-para l-ml-1"><span class="text-accent">Address:</span>123 Street, ABC, Courtenay</p>
+      </div>
+    </div>
+    <div class="l-flex l-flex-column">
+      <h3 class="u-h3 l-flex-column">Follow Me</h3>
+      <ul class="l-flex l-flex-column">
+        <li class="u-para l-ml-1"><a href="#">Twitter</a></li>
+        <li class="u-para l-ml-1"><a href="#">Facebook</a></li>
+        <li class="u-para l-ml-1"><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+
+  </footer>
   <script src="design-system.js"></script>
 </body>
 
