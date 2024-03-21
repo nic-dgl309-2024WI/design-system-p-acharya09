@@ -3,21 +3,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeButton = document.querySelector('.navbar__close-button');
     const navLinks = document.querySelector('.navbar__nav-links');
     const sidebar = document.querySelector('.sidebar');
-    const color = document.querySelector('.color');
 
 
     hamburgerIcon.addEventListener('click', function() {
         navLinks.style.display = 'block';
         sidebar.style.display = 'block';
-        color.style.display = 'block';
         closeButton.style.display = 'block';
         hamburgerIcon.style.display = 'none';
     });
 
+
     closeButton.addEventListener('click', function() {
         navLinks.style.display = 'none';
         sidebar.style.display = 'none';
-        color.style.display = 'none';
         closeButton.style.display = 'none';
         hamburgerIcon.style.display = 'block';
     });
