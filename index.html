@@ -7,85 +7,220 @@
     <title>Home - Design System</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="design-system.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Logo and Hamburger Menu -->
-    <nav class="navbar">
-        <div class="navbar navbar--top">
-            <div class="navbar__logo u-h1">
-                <a href="index.html">Design System</a>
-            </div>
-            <button class="navbar__hamburger-icon">&#9776;</button>
-            <button class="navbar__close-button">&#10006;</button>
+    <!-- Navigation -->
+    <nav>
+        <div>
+            <img src="#" alt="Logo">
+            <button>&#9776;</button>
+            <button>&#10006;</button>
         </div>
 
-        <!-- Top Navbar -->
-        <div class="navbar navbar--top">
-            <ul class="navbar__nav-links">
-                <li><a href="about-me.html">About Me</a></li>
-                <li><a href="index.html">Demo Site</a></li>
+        <div>
+            <ul>
+                <li><a>About Us</a></li>
+                <li><a>Products</a></li>
+                <li><a>Services</a></li>
+                <li><a>Resources</a></li>
+                <li><a>Contacts</a></li>
+                <i>Icon</i>
             </ul>
         </div>
     </nav>
 
-    <!-- Side Navbar -->
-    <div class="container">
-        <aside class="sidebar">
-            <nav class="sidebar__section">
-                <h2 class="sidebar__section-heading u-h2">Branding</h2>
-                <ul class="sidebar__nav u-h3">
-                    <li><a href="colours.html">01 Colours</a></li>
-                    <li><a href="typography.html">02 Typography</a></li>
-                    <li><a href="#logo">03 Logo</a></li>
-                </ul>
-            </nav>
-            <nav class="sidebar__section">
-                <h2 class="sidebar__section-heading u-h2">Utilities</h2>
-                <ul class="sidebar__nav u-h3">
-                    <li><a href="spacing.html">04 Spacing</a></li>
-                    <li><a href="containers.html">05 Containers</a></li>
-                    <li><a href="#images">06 Images</a></li>
-                    <li><a href="#interactive">07 Interactive</a></li>
-                    <li><a href="#feedback">08 Feedback</a></li>
-                </ul>
-            </nav>
-            <nav class="sidebar__section">
-                <h2 class="sidebar__section-heading u-h2">Navigation</h2>
-                <ul class="sidebar__nav u-h3">
-                    <li><a href="#navbars">09 Navbars</a></li>
-                    <li><a href="#breadcrumbs">10 Breadcrumbs</a></li>
-                    <li><a href="#pagination">11 Pagination</a></li>
-                </ul>
-            </nav>
-            <nav class="sidebar__section">
-                <h2 class="sidebar__section-heading u-h2">Blocks</h2>
-                <ul class="sidebar__nav u-h3">
-                    <li><a href="#hero">12 Hero</a></li>
-                    <li><a href="#carousel">13 Carousel</a></li>
-                    <li><a href="#slats">14 Slats</a></li>
-                    <li><a href="#footer">15 Footer</a></li>
-                </ul>
-            </nav>
-            <nav class="sidebar__section">
-                <h2 class="sidebar__section-heading u-h2">Components</h2>
-                <ul class="sidebar__nav u-h3">
-                    <li><a href="#cards">16 Cards</a></li>
-                    <li><a href="#forms">17 Forms</a></li>
-                    <li><a href="#accordion">18 Accordion</a></li>
-                    <li><a href="#lists">19 Lists</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <section class="index">
-            <p class="u-para l-m-3">This is the index page with no content. Go to navbar/sidebar menu for Content</p>
-        </section>
-    </div>
-    <script src="design-system.js"></script>
+    <!-- Hero Section -->
+    <section>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="image1.jpg" alt="Image 1">
+                    <div>
+                        <h4>Conifers</h4>
+                        <p>Text Here</p>
+                    </div>
+                    <button>See What's Available</button>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="image1.jpg" alt="Image 1">
+                    <div>
+                        <h4>Conifers</h4>
+                        <p>Text Here</p>
+                    </div>
+                    <button>See What's Available</button>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="image1.jpg" alt="Image 1">
+                    <div>
+                        <h4>Conifers</h4>
+                        <p>Text Here</p>
+                    </div>
+                    <button>See What's Available</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            Pagination Here
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section>
+        <h2>Heading</h2>
+        <p>Text Text</p>
+        <button>Meet Our Team</button>
+    </section>
+
+    <!-- Products Section -->
+    <section>
+        <h2>Heading</h2>
+        <h3>Sub Heading</h3>
+        <div>
+            <img src="image1.jpg" alt="Image 1">
+            <div>
+                <h4>Product Name</h4>
+                <p>Text Here</p>
+            </div>
+            <button>Explore</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+        <h2>Services</h2>
+        <div>
+            <i>Icon 1</i>
+            <i>Icon 2</i>
+            <i>Icon 3</i>
+            <i>Icon 4</i>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section>
+        <h2>Resources</h2>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Tab1')" id="defaultOpen">FAQ</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab2')">Blog</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab3')">Resource 3</button>
+            <button class="tablinks" onclick="openTab(event, 'Tab3')">Resource 4</button>
+        </div>
+
+        <div id="Tab1" class="tabcontent">
+            <h3>Tab 1 Content</h3>
+            <p>This is the content of Tab 1.</p>
+        </div>
+
+        <div id="Tab2" class="tabcontent">
+            <h3>Tab 2 Content</h3>
+            <p>This is the content of Tab 2.</p>
+        </div>
+
+        <div id="Tab3" class="tabcontent">
+            <h3>Tab 3 Content</h3>
+            <p>This is the content of Tab 3.</p>
+        </div>
+
+        <div id="Tab4" class="tabcontent">
+            <h3>Tab 4 Content</h3>
+            <p>This is the content of Tab 4.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section>
+        <h2>Testimonials</h2>
+        <div>
+            <img src="#" alt="Testimonail Image">
+            <i>Name</i>
+            <blockquote cite="https://example.com/quote-source">
+                <p>This is a longer quote that spans multiple lines.</p>
+            </blockquote>
+        </div>
+        <div>
+            <img src="#" alt="Testimonail Image">
+            <i>Name</i>
+            <blockquote cite="https://example.com/quote-source">
+                <p>This is a longer quote that spans multiple lines.</p>
+            </blockquote>
+        </div>
+        <div>
+            <img src="#" alt="Testimonail Image">
+            <i>Name</i>
+            <blockquote cite="https://example.com/quote-source">
+                <p>This is a longer quote that spans multiple lines.</p>
+            </blockquote>
+        </div>
+        
+        <div class="pagination">
+            Pagination Here
+        </div>
+    </section>
+
+    <!-- Gift Certificates Section -->
+    <section>
+        <img src="#image" alt="Gift Certificates">
+        <form>
+            <div>
+                <label for="From">From</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="To">To</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="Email">Email</label>
+                <input type="email">
+            </div>
+            <div>
+                <label for="Message">Message</label>
+                <textarea name="message" id="message" cols="4" rows="3"></textarea>
+            </div>
+            <button>Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <h3>Contact Us</h3>
+            <p>Email:a@a.com</p>
+            <p>Phone:123456789</p>
+            <p>Addess:address</p>
+        </div>
+        <div>
+            <h3>Working Hours</h3>
+            <p>Moday - Friday: 8 am to 10pm</p>
+            <p>Saturday - Sunday: 2pm to 8pm</p>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <ul>
+                <li>Products</li>
+                <li>Services</li>
+                <li>Resources</li>
+            </ul>
+            <ul>
+                <li>Policies</li>
+                <li><i>Facebook</i></li>
+            </ul>
+        </div>
+        <div>
+            <p>Copyright@<span>outbacknursery</span></p>
+        </div>
+    </footer>
 </body>
 
 </html>
