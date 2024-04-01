@@ -455,3 +455,12 @@ body{
   overflow-y: auto;
 }
 
+.hamburger-btn, .close-btn{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburger-btn{
+    display: block;
+  }
+}
