@@ -455,12 +455,25 @@ body{
   overflow-y: auto;
 }
 
-.hamburger-btn, .close-btn{
+/* Navigation CSS */
+.navigation__hamburger-btn{
+  display: block;
+}
+.navigation__close-btn{
+  display: none;
+}
+.navigation__menu{
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
-  .hamburger-btn{
+/* Desktop view */
+@media only screen and (min-width: 768px) {
+  /* Navigation */
+  .navigation__hamburger-btn, .navigation__close-btn{
+    display: none;
+  }
+
+  .navigation__menu{
     display: block;
   }
 }

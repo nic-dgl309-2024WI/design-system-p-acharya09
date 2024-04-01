@@ -1,14 +1,14 @@
 function toggleMenu(show) {
-    const navLinks = document.querySelector('nav ul');
-    const hamburgerBtn = document.querySelector('.hamburger-btn');
-    const closeBtn = document.querySelector('.close-btn');
+    const navMenu = document.querySelector('.navigation__menu');
+    const hamburgerBtn = document.querySelector('.navigation__hamburger-btn');
+    const closeBtn = document.querySelector('.navigation__close-btn');
     
     if (show) {
-      navLinks.classList.add('show');
+      navMenu.style.display='block';
       hamburgerBtn.style.display = 'none';
       closeBtn.style.display = 'block';
     } else {
-      navLinks.classList.remove('show');
+      navMenu.style.display='none';
       hamburgerBtn.style.display = 'block';
       closeBtn.style.display = 'none';
     }
