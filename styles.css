@@ -85,7 +85,7 @@ body{
 
 .button{
   text-align: center;
-  display: inline-block;
+  flex-shrink: 0;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
@@ -93,6 +93,10 @@ body{
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  width: auto;
+  max-width: 12.5rem;
+  height: auto;
+  max-height: 3.125rem;
 }
 
 /* Utility class */
@@ -452,9 +456,17 @@ body{
   color: var(--clr-primary-text); /* dark text color */
 }
 
+.btn-primary:hover{
+  background-color: var(--clr-secondary-bg); /* primary background color */
+}
+
 .btn-secondary{
   background-color: var(--clr-secondary-bg); /* secondary background color */
   color: var(--clr-primary-text); /* white text color */
+}
+
+.btn-secondary:hover{
+  background-color: var(--clr-accent); /* primary background color */
 }
 
 /* Container */
@@ -498,6 +510,12 @@ body{
   overflow: hidden;
   position: relative;
   margin: 0 auto;
+}
+
+.hero__description{
+  color: var(--clr-primary-text);
+  background-color: var(--clr-primary-bg);
+  opacity: 0.8;
 }
 
 .hero__carousel-inner {
@@ -555,7 +573,6 @@ body{
 .product__carousel {
   position: relative;
   width: 100%;
-  max-width: 600px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -565,6 +582,7 @@ body{
 }
 
 .product__carousel-items {
+  background-color: var(--clr-secondary-bg);
   flex: 0 0 100%;
 }
 
@@ -611,7 +629,6 @@ button.next {
   background-color: var(--clr-primary-bg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-
 }
 
 .services__icon {
@@ -719,6 +736,10 @@ button.next {
   color: var(--clr-secondary-bg)
 }
 
+#about-para{
+  display: none;
+}
+
 /* Desktop view */
 @media only screen and (min-width: 768px) {
   /* Navigation */
@@ -751,6 +772,36 @@ button.next {
     margin: 2rem;
   }
 
+  /* Hero Section */
+  .hero__image{
+    width: 100%;
+  }
+
+  .hero__carousel-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero__description{
+    margin-right: 6rem;
+  }
+
+  #about-para{
+    display: block;
+  }
+
+  .product__carousel-items {
+    background-color: var(--clr-secondary-bg);
+    flex: 0 0 25%;
+    margin: 3rem;
+  }
+
+  .services__icon-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
 }
 
 
