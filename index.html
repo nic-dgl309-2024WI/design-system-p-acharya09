@@ -27,11 +27,11 @@
 
         <div class="navigation__menu">
             <ul class="navigation__list">
-              <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">Products</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">Services</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">Resources</a></li>
-              <li class="navigation__item"><a href="#" class="navigation__link">Contacts</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Products</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Services</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Resources</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Contacts</a></li>
             </ul>
             <i class="navigation__icon">Icon</i>
         </div>
@@ -42,36 +42,41 @@
         <div class="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item">
-                    <img src="image1.jpg" alt="Image 1">
-                    <div>
-                        <h4>Conifers</h4>
-                        <p>Text Here</p>
+                    <img src="./images/conifers.jpeg" alt="Conifers">
+                    <div class="carousel-content">
+                        <div>
+                            <h4>Conifers</h4>
+                            <p>Text Here</p>
+                        </div>
+                        <button>See What's Available</button>
                     </div>
-                    <button>See What's Available</button>
                 </div>
 
                 <div class="carousel-item">
-                    <img src="image1.jpg" alt="Image 1">
-                    <div>
-                        <h4>Conifers</h4>
-                        <p>Text Here</p>
+                    <img src="./images/deciduous.jpeg" alt="Deciduous">
+                    <div class="carousel-content">
+                        <div>
+                            <h4>Deciduous</h4>
+                            <p>Text Here</p>
+                        </div>
+                        <button>See What's Available</button>
                     </div>
-                    <button>See What's Available</button>
                 </div>
 
                 <div class="carousel-item">
-                    <img src="image1.jpg" alt="Image 1">
-                    <div>
-                        <h4>Conifers</h4>
-                        <p>Text Here</p>
+                    <img src="./images/evergreen.jpeg" alt="Evergreen">
+                    <div class="carousel-content">
+                        <div>
+                            <h4>Evergreen</h4>
+                            <p>Text Here</p>
+                        </div>
+                        <button>See What's Available</button>
                     </div>
-                    <button>See What's Available</button>
                 </div>
             </div>
         </div>
 
         <div class="pagination">
-            Pagination Here
         </div>
     </section>
 
@@ -84,17 +89,49 @@
 
     <!-- Products Section -->
     <section>
-        <h2>Heading</h2>
-        <h3>Sub Heading</h3>
-        <div>
-            <img src="image1.jpg" alt="Image 1">
-            <div>
-                <h4>Product Name</h4>
-                <p>Text Here</p>
+        <h2>Products</h2>
+        <h3>Featured Products</h3>
+    
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-items active">
+                    <div class="card">
+                        <img src="./images/deciduous.jpeg" class="card-img-top" alt="Deciduous">
+                        <div class="card-body">
+                            <h4 class="card-title">Conifers</h4>
+                            <p class="card-text">Text Here</p>
+                            <button class="btn btn-primary">See What's Available</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-items">
+                    <div class="card">
+                        <img src="./images/conifers.jpeg" class="card-img-top" alt="Conifers">
+                        <div class="card-body">
+                            <h4 class="card-title">Deciduous</h4>
+                            <p class="card-text">Text Here</p>
+                            <button class="btn btn-primary">See What's Available</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-items">
+                    <div class="card">
+                        <img src="./images/evergreen.jpeg" class="card-img-top" alt="Evergreen">
+                        <div class="card-body">
+                            <h4 class="card-title">Evergreen</h4>
+                            <p class="card-text">Text Here</p>
+                            <button class="btn btn-primary">See What's Available</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <button>Explore</button>
+            <button class="prev" onclick="moveCarousel(-1)">&#10094;</button>
+            <button class="next" onclick="moveCarousel(1)">&#10095;</button>
         </div>
     </section>
+    
+    
+    
 
     <!-- Services Section -->
     <section>
@@ -162,7 +199,7 @@
                 <p>This is a longer quote that spans multiple lines.</p>
             </blockquote>
         </div>
-        
+
         <div class="pagination">
             Pagination Here
         </div>

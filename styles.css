@@ -459,12 +459,116 @@ body{
 .navigation__hamburger-btn{
   display: block;
 }
+
 .navigation__close-btn{
   display: none;
 }
+
 .navigation__menu{
   display: none;
 }
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.carousel-item {
+  position: relative;
+  flex: 0 0 auto;
+  width: 100%; /* Adjust this width as needed */
+}
+.carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white; /* Adjust text color as needed */
+}
+.carousel-content > div {
+  margin-bottom: 10px;
+}
+.pagination {
+  text-align: center;
+  margin-top: 10px;
+}
+.pagination-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.pagination-dot.active {
+  background-color: #333;
+}
+
+
+/* Product Carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-items {
+  flex: 0 0 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.card-body {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+button.prev, button.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 2;
+}
+
+button.prev {
+  left: 0;
+}
+
+button.next {
+  right: 0;
+}
+
 
 /* Desktop view */
 @media only screen and (min-width: 768px) {
