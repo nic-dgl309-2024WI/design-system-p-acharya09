@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Get testimonials and pagination buttons
-const testimonials = document.querySelectorAll('.testimonial');
-const paginationButtons = document.querySelectorAll('.pagination button');
+const testimonials = document.querySelectorAll('.testimonial__content');
+const paginationButtons = document.querySelectorAll('.testimonial__pagination button');
 
 // Set current page and testimonials per page
 let currentPage = 0;
@@ -177,4 +177,3 @@ function previousPage() {
 
 // Initially show testimonials
 showTestimonials();
-

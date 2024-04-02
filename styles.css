@@ -480,6 +480,10 @@ body{
 }
 
 /* Navigation CSS */
+.navigation{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .navigation__hamburger-btn{
   display: block;
 }
@@ -610,7 +614,7 @@ button.next {
 
 /* Services */
 .services{
-  background-color: var(--clr-secondary-bg);
+  background-color: var(--clr-primary-bg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 
@@ -620,7 +624,7 @@ button.next {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background-color: var(--clr-primary-bg); 
+  background-color: var(--clr-secondary-bg); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -636,14 +640,84 @@ button.next {
   background-color: var(--clr-secondary-bg); 
 }
 
+
+/* Resources */
+.tabcontent{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-item{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .accordion-content {
   display: none;
 }
 
 .accordion-btn.active {
-  background-color: #ddd;
+  background-color: var(--clr-accent);
 }
 
+/* Testimonials */
+.testimonial__content{
+  position: relative;
+  height: 100%;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--clr-secondary-bg);
+}
+
+.testimonial__image{
+  height: 5rem; 
+  width: 5rem; 
+  border-radius: 50%; 
+  position: absolute;
+  top: -2.5rem;
+  left: 38%;
+} 
+
+.testimonial__info p{
+  text-align: justify;
+}
+
+/* Gift Certificates */
+.gift__form {
+  background-color: var(--clr-secondary-bg);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.gift__form-content {
+  margin-bottom: 15px;
+}
+
+.gift__form-content label {
+  display: block;
+  font-weight: bold;
+}
+
+.gift__form-content input[type="text"],
+.gift__form-content input[type="email"],
+.gift__form-content textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.gift__form-content textarea {
+  resize: vertical;
+}
+
+.footer{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
 /* Desktop view */
 @media only screen and (min-width: 768px) {
@@ -656,3 +730,5 @@ button.next {
     display: block;
   }
 }
+
+
