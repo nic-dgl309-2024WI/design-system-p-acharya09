@@ -480,10 +480,6 @@ body{
 }
 
 /* Navigation CSS */
-.navigation{
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 .navigation__hamburger-btn{
   display: block;
 }
@@ -573,8 +569,6 @@ body{
 }
 
 .product__card {
-  /* display: flex;
-  flex-direction: column; */
   height: 100%;
   border: 2px solid var(--clr-secondary-bg);
   border-radius: 5px;
@@ -719,6 +713,12 @@ button.next {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Additional CSS */
+.navigation__item:hover{
+  text-decoration: underline;
+  color: var(--clr-secondary-bg)
+}
+
 /* Desktop view */
 @media only screen and (min-width: 768px) {
   /* Navigation */
@@ -727,8 +727,30 @@ button.next {
   }
 
   .navigation__menu{
-    display: block;
+    display: flex;
+    justify-content: space-around;
   }
+
+  .navigation{
+    display: flex;
+    justify-content : space-between;
+    align-items: center;
+    background-color: var(--clr-primary-bg);
+    color: var(--clr-primary-text);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0.8rem;
+  }
+
+  .navigation__list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navigation__item, .navigation__icon{
+    margin: 2rem;
+  }
+
 }
 
 
