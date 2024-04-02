@@ -499,15 +499,17 @@ body{
   position: relative;
   margin: 0 auto;
 }
+
 .hero__carousel-inner {
-  display: flex;
   transition: transform 0.5s ease;
 }
+
 .hero__carousel-item {
   position: relative;
   flex: 0 0 auto;
   width: 100%; /* Adjust this width as needed */
 }
+
 .hero__carousel-content {
   position: absolute;
   top: 50%;
@@ -516,13 +518,16 @@ body{
   text-align: center;
   color: white; /* Adjust text color as needed */
 }
+
 .hero__carousel-content > div {
   margin-bottom: 10px;
 }
+
 .hero__pagination {
   text-align: center;
   margin-top: 10px;
 }
+
 .pagination-dot {
   display: inline-block;
   width: 10px;
@@ -532,6 +537,7 @@ body{
   margin: 0 5px;
   cursor: pointer;
 }
+
 .pagination-dot.active {
   background-color: #333;
 }
@@ -546,7 +552,7 @@ body{
 }
 
 /* Product Carousel */
-.carousel {
+.product__carousel {
   position: relative;
   width: 100%;
   max-width: 600px;
@@ -554,30 +560,30 @@ body{
   overflow: hidden;
 }
 
-.carousel-inner {
-  display: flex;
+.product__carousel-inner {
   transition: transform 0.5s ease;
 }
 
-.carousel-items {
+.product__carousel-items {
   flex: 0 0 100%;
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
+.product__card {
+  /* display: flex;
+  flex-direction: column; */
   height: 100%;
-  border: 1px solid #ccc;
+  border: 2px solid var(--clr-secondary-bg);
   border-radius: 5px;
   overflow: hidden;
+  width: 100%;
 }
 
-.card-img-top {
+.product__image {
   width: 100%;
   height: auto;
 }
 
-.card-body {
+.product__content {
   padding: 10px;
   flex-grow: 1;
 }
@@ -602,6 +608,33 @@ button.next {
   right: 0;
 }
 
+/* Services */
+.services{
+  background-color: var(--clr-secondary-bg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+}
+
+.services__icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--clr-primary-bg); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.services__icon i {
+  color: var(--clr-primary-text); 
+}
+
+.services__icon:hover {
+  background-color: var(--clr-secondary-bg); 
+}
 
 .accordion-content {
   display: none;

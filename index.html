@@ -14,6 +14,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -38,9 +39,9 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero l-flex l-flex-column l-flex-center">
         <div class="hero__carousel">
-            <div class="hero__carousel-inner">
+            <div class="hero__carousel-inner l-flex">
                 <div class="hero__carousel-item">
                     <img class="hero__image" src="./images/conifers.jpeg" alt="Conifers">
                     <div class="hero__carousel-content">
@@ -81,46 +82,58 @@
     </section>
 
     <!-- About Us Section -->
-    <section class="about l-flex l-flex-column l-flex-center l-m-3 l-p-1">
+    <section class="about l-flex l-flex-column l-flex-center l-m-2 l-p-1">
         <h2 class="about__heading u-h2">Outback Nursery</h2>
-        <p class="about__content u-para">Outback Nursery is one of the largest garden centres on Vancouver Island.   Our nursery is situated on a  6 acre property and offers 5 overflowing greenhouses (30x170ft); almost 23,000 square feet.</p>
+        <p class="about__content u-para">Outback Nursery is one of the largest garden centres on Vancouver Island. Our
+            nursery is situated on a 6 acre property and offers 5 overflowing greenhouses (30x170ft); almost 23,000
+            square feet.</p>
         <button class="about__button button btn-secondary">Know More About Us</button>
     </section>
 
     <!-- Products Section -->
-    <section class="product">
-        <h2 class="product__header">Products</h2>
-        <h3 class="product__subheader">Featured Products</h3>
-    
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-items active">
-                    <div class="card">
-                        <img src="./images/deciduous.jpeg" class="card-img-top" alt="Deciduous">
-                        <div class="card-body">
-                            <h4 class="card-title">Conifers</h4>
-                            <p class="card-text">Text Here</p>
-                            <button class="btn btn-primary">See What's Available</button>
+    <section class="product l-flex l-flex-column l-flex-center l-m-2 l-p-1">
+        <h2 class="product__header u-h2">Products</h2>
+        <h3 class="product__subheader u-h3">Featured Products</h3>
+
+        <div class="product__carousel">
+            <div class="product__carousel-inner  l-flex">
+                <div class="product__carousel-items active">
+                    <div class="product__card l-flex l-flex-column l-flex-center">
+                        <img src="./images/deciduous.jpeg" class="product__image" alt="Deciduous">
+                        <div class="product__content l-flex l-flex-column l-flex-center">
+                            <h4 class="product__content-heading card-title u-h4">Conifers</h4>
+                            <p class="product__content-text card-text u-para">Text Here</p>
+                            <button class="product__button button btn-secondary">See What's Available</button>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-items">
-                    <div class="card">
-                        <img src="./images/conifers.jpeg" class="card-img-top" alt="Conifers">
-                        <div class="card-body">
-                            <h4 class="card-title">Deciduous</h4>
-                            <p class="card-text">Text Here</p>
-                            <button class="btn btn-primary">See What's Available</button>
+                <div class="product__carousel-items">
+                    <div class="product__card l-flex l-flex-column l-flex-center">
+                        <img src="./images/deciduous.jpeg" class="product__image" alt="Deciduous">
+                        <div class="product__content l-flex l-flex-column l-flex-center">
+                            <h4 class="product__content-heading card-title u-h4">Conifers</h4>
+                            <p class="product__content-text card-text u-para">Text Here</p>
+                            <button class="product__button button btn-secondary">See What's Available</button>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-items">
-                    <div class="card">
-                        <img src="./images/evergreen.jpeg" class="card-img-top" alt="Evergreen">
-                        <div class="card-body">
-                            <h4 class="card-title">Evergreen</h4>
-                            <p class="card-text">Text Here</p>
-                            <button class="btn btn-primary">See What's Available</button>
+                <div class="product__carousel-items">
+                    <div class="product__card l-flex l-flex-column l-flex-center">
+                        <img src="./images/deciduous.jpeg" class="product__image" alt="Deciduous">
+                        <div class="product__content l-flex l-flex-column l-flex-center">
+                            <h4 class="product__content-heading card-title u-h4">Conifers</h4>
+                            <p class="product__content-text card-text u-para">Text Here</p>
+                            <button class="product__button button btn-secondary">See What's Available</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__carousel-items">
+                    <div class="product__card l-flex l-flex-column l-flex-center">
+                        <img src="./images/deciduous.jpeg" class="product__image" alt="Deciduous">
+                        <div class="product__content l-flex l-flex-column l-flex-center">
+                            <h4 class="product__content-heading card-title u-h4">Conifers</h4>
+                            <p class="product__content-text card-text u-para">Text Here</p>
+                            <button class="product__button button btn-secondary">See What's Available</button>
                         </div>
                     </div>
                 </div>
@@ -129,20 +142,33 @@
             <button class="next" onclick="moveCarousel(1)">&#10095;</button>
         </div>
     </section>
-    
-    
-    
 
     <!-- Services Section -->
-    <section>
-        <h2>Services</h2>
-        <div>
-            <i>Icon 1</i>
-            <i>Icon 2</i>
-            <i>Icon 3</i>
-            <i>Icon 4</i>
+    <section class="services l-flex l-flex-column l-flex-center l-m-2 l-p-1">
+        <h2 class="services__heading u-h2">Services</h2>
+        <div class="services__icon-container l-grid l-grid-cols-2 l-grid-gap-1">
+          <a href="coming-soon.html">
+            <div class="services__icon">
+                <i class="fa-solid fa-tree"></i>
+            </div>
+          </a>
+          <a href="coming-soon.html">
+            <div class="services__icon">
+                <i class="fa-solid fa-truck"></i>
+            </div>
+          </a>
+          <a href="coming-soon.html">
+            <div class="services__icon">
+                <i class="fa-solid fa-circle-info"></i>
+            </div>
+          </a>
+          <a href="coming-soon.html">
+            <div class="services__icon">
+                <i class="fa-solid fa-qrcode"></i>
+            </div>
+          </a>
         </div>
-    </section>
+      </section>
 
     <!-- Resources Section -->
     <section>
@@ -175,7 +201,7 @@
                         <p>Answer to question 3.</p>
                     </div>
                 </div>
-            </div>           
+            </div>
         </div>
 
         <div id="Tab2" class="tabcontent">
