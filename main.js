@@ -116,3 +116,25 @@ function openTab(event, tabId) {
 // Set the default tab to be open
 document.getElementById('defaultOpen').click();
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionBtns = document.querySelectorAll('.accordion-btn');
+
+    accordionBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Toggle the active class to expand/collapse accordion content
+            this.classList.toggle('active');
+
+            // Get the sibling accordion content
+            const content = this.nextElementSibling;
+
+            // Toggle the display of accordion content
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+    });
+});
+
