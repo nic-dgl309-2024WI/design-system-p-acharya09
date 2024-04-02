@@ -451,21 +451,21 @@ body{
 /* Buttons */
 
 .btn-primary{
-  background-color: var(--clr-primary-bg); /* primary background color */
-  color: var(--clr-primary-text); /* dark text color */
+  background-color: var(--clr-primary-bg);
+  color: var(--clr-primary-text);
 }
 
 .btn-primary:hover{
-  background-color: var(--clr-secondary-bg); /* primary background color */
+  background-color: var(--clr-accent);
 }
 
 .btn-secondary{
-  background-color: var(--clr-secondary-bg); /* secondary background color */
-  color: var(--clr-primary-text); /* white text color */
+  background-color: var(--clr-secondary-bg);
+  color: var(--clr-primary-text);
 }
 
 .btn-secondary:hover{
-  background-color: var(--clr-accent); /* primary background color */
+  background-color: var(--clr-accent);
 }
 
 /* Container */
@@ -709,6 +709,10 @@ button.next {
 }
 
 /* Gift Certificates */
+.gift{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
 .gift__form {
   background-color: var(--clr-secondary-bg);
   border: 1px solid #ccc;
@@ -843,6 +847,21 @@ button.next {
     left: 45%;
   }
 
+  .gift__content{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .gift__form{
+    margin-left: 6rem;
+  }
+
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 10px;
+  }
   
 }
 
