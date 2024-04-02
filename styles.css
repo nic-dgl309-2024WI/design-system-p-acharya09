@@ -83,6 +83,18 @@ body{
   line-height: 1.6;
 }
 
+.button{
+  text-align: center;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
 /* Utility class */
 .u-h1 {
   font-family: var(--heading-font-family);
@@ -433,6 +445,18 @@ body{
   align-content: space-evenly;
 }
 
+/* Buttons */
+
+.btn-primary{
+  background-color: var(--clr-primary-bg); /* primary background color */
+  color: var(--clr-primary-text); /* dark text color */
+}
+
+.btn-secondary{
+  background-color: var(--clr-secondary-bg); /* secondary background color */
+  color: var(--clr-primary-text); /* white text color */
+}
+
 /* Container */
 
 .l-max-width-desktop {
@@ -468,22 +492,23 @@ body{
   display: none;
 }
 
-.carousel {
+/* Hero Carousel CSS */
+.hero__carousel {
   width: 100%;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
 }
-.carousel-inner {
+.hero__carousel-inner {
   display: flex;
   transition: transform 0.5s ease;
 }
-.carousel-item {
+.hero__carousel-item {
   position: relative;
   flex: 0 0 auto;
   width: 100%; /* Adjust this width as needed */
 }
-.carousel-content {
+.hero__carousel-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -491,10 +516,10 @@ body{
   text-align: center;
   color: white; /* Adjust text color as needed */
 }
-.carousel-content > div {
+.hero__carousel-content > div {
   margin-bottom: 10px;
 }
-.pagination {
+.hero__pagination {
   text-align: center;
   margin-top: 10px;
 }
@@ -511,6 +536,14 @@ body{
   background-color: #333;
 }
 
+/* About Section */
+.about{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about__content{
+  text-align: justify;
+}
 
 /* Product Carousel */
 .carousel {

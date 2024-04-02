@@ -17,9 +17,9 @@ function toggleMenu(show) {
 
 
 // Hero Items  
-const carouselInner = document.querySelector('.carousel-inner');
-const carouselItems = document.querySelectorAll('.carousel-item');
-const pagination = document.querySelector('.pagination');
+const carouselInner = document.querySelector('.hero__carousel-inner');
+const carouselItems = document.querySelectorAll('.hero__carousel-item');
+const pagination = document.querySelector('.hero__pagination');
 
 let currentIndex = 0;
 const totalItems = carouselItems.length;
