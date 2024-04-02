@@ -138,3 +138,43 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+// Get testimonials and pagination buttons
+const testimonials = document.querySelectorAll('.testimonial');
+const paginationButtons = document.querySelectorAll('.pagination button');
+
+// Set current page and testimonials per page
+let currentPage = 0;
+const testimonialsPerPage = 1;
+
+// Show testimonials based on current page
+function showTestimonials() {
+    const startIndex = currentPage * testimonialsPerPage;
+    const endIndex = startIndex + testimonialsPerPage;
+
+    testimonials.forEach((testimonial, index) => {
+        if (index >= startIndex && index < endIndex) {
+            testimonial.style.display = 'block';
+        } else {
+            testimonial.style.display = 'none';
+        }
+    });
+}
+
+// Go to next page
+function nextPage() {
+    const totalPages = Math.ceil(testimonials.length / testimonialsPerPage);
+    currentPage = (currentPage + 1) % totalPages;
+    showTestimonials();
+}
+
+// Go to previous page
+function previousPage() {
+    const totalPages = Math.ceil(testimonials.length / testimonialsPerPage);
+    currentPage = (currentPage - 1 + totalPages) % totalPages;
+    showTestimonials();
+}
+
+// Initially show testimonials
+showTestimonials();
+
