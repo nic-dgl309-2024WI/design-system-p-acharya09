@@ -91,3 +91,28 @@ function updateCarousel() {
     });
 }
 
+
+// Function to open a specific tab
+function openTab(event, tabId) {
+    // Hide all tab contents
+    const tabContents = document.querySelectorAll('.tabcontent');
+    tabContents.forEach(tabContent => {
+        tabContent.style.display = 'none';
+    });
+
+    // Remove 'active' class from all tab links
+    const tabLinks = document.querySelectorAll('.tablinks');
+    tabLinks.forEach(tabLink => {
+        tabLink.classList.remove('active');
+    });
+
+    // Show the selected tab content
+    document.getElementById(tabId).style.display = 'block';
+
+    // Add 'active' class to the clicked tab link
+    event.currentTarget.classList.add('active');
+}
+
+// Set the default tab to be open
+document.getElementById('defaultOpen').click();
+
