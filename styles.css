@@ -448,6 +448,12 @@ body{
   align-content: space-evenly;
 }
 
+.img{
+  width: 500px; 
+  height: 500px; 
+  border-radius: 25px;
+}
+
 /* Buttons */
 
 .btn-primary{

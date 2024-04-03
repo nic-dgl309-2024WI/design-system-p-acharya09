@@ -72,7 +72,7 @@ img{
         align-items: center;
     }
 
-    .typography, .logo{
+    .typography, .logo, .images{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -183,7 +183,7 @@ img{
         font-size: 18px;
     }
 
-    .typography, .index, .logo {
+    .typography, .index, .logo, .images {
         width: 156.25rem;
         height: 50.5rem;
         margin: 100px;
