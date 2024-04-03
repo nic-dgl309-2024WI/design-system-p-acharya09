@@ -108,7 +108,7 @@ code {
         align-items: center;
     }
 
-    .typography, .logo, .images, .interactive, .navbars{
+    .typography, .logo, .images, .interactive, .navbars, .breadcrumbs{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -222,7 +222,7 @@ code {
         font-size: 18px;
     }
 
-    .typography, .index, .logo, .images, .interactive{
+    .typography, .index, .logo, .images, .interactive, .breadcrumbs{
         width: 156.25rem;
         height: 50.5rem;
         margin: 100px;
