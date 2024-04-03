@@ -41,7 +41,7 @@
                 <ul class="sidebar__nav u-h3">
                     <li><a href="colours.html">01 Colours</a></li>
                     <li><a href="typography.html">02 Typography</a></li>
-                    <li><a href="logo.html">03 Logo</a></li>
+                    <li class="active"><a href="logo.html">03 Logo</a></li>
                 </ul>
             </nav>
             <nav class="sidebar__section">
@@ -81,8 +81,17 @@
                 </ul>
             </nav>
         </aside>
-        <section class="index">
-            <p class="u-para l-m-3">This is the index page with no content. Go to navbar/sidebar menu for Content</p>
+
+        <!-- Logo -->
+        <section class="logo">
+            <div>
+                <label for="Logo Color">Logo Color (Image and logo-color class)</label>
+                <img class="navigation__logo logo-color" src="images/logo.png" alt="Logo">
+            </div>
+            <div>
+                <label for="Logo BW">Logo No Color(Image and logo-bw class)</label>
+                <img class="navigation__logo logo-color" src="images/logo-bw.png" alt="Logo">
+            </div>
         </section>
     </div>
     <script src="design-system.js"></script>
