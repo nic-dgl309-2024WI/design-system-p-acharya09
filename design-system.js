@@ -76,4 +76,49 @@ for (let i = 0; i < totalItems; i++) {
 }
 
 setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+
+function openTab(event, tabId) {
+    // Hide all tab contents
+    const tabContents = document.querySelectorAll('.tabcontent');
+    tabContents.forEach(tabContent => {
+        tabContent.style.display = 'none';
+    });
+
+    // Remove 'active' class from all tab links
+    const tabLinks = document.querySelectorAll('.tablinks');
+    tabLinks.forEach(tabLink => {
+        tabLink.classList.remove('active');
+    });
+
+    // Show the selected tab content
+    document.getElementById(tabId).style.display = 'block';
+
+    // Add 'active' class to the clicked tab link
+    event.currentTarget.classList.add('active');
+}
+
+// Set the default tab to be open
+document.getElementById('defaultOpen').click();
   
+
+document.addEventListener('DOMContentLoaded', function() {
+    const accordionBtns = document.querySelectorAll('.accordion-btn');
+
+    accordionBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Toggle the active class to expand/collapse accordion content
+            this.classList.toggle('active');
+
+            // Get the sibling accordion content
+            const content = this.nextElementSibling;
+
+            // Toggle the display of accordion content
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+            } else {
+                content.style.display = 'block';
+            }
+        });
+    });
+});
