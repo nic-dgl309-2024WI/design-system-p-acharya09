@@ -109,7 +109,7 @@ code {
         align-items: center;
     }
 
-    .typography, .logo, .images, .interactive, .navbars, .breadcrumbs{
+    .typography, .logo, .images, .interactive, .navbars, .breadcrumbs, .footers{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -239,7 +239,7 @@ code {
         font-size: 18px;
     }
 
-    .navbars{
+    .navbars,.footers{
         width: 156.25rem;
         height: 120.5rem;
         margin: 100px;
