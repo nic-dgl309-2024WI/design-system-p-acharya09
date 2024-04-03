@@ -109,7 +109,7 @@ code {
         align-items: center;
     }
 
-    .typography, .logo, .images, .interactive, .navbars, .breadcrumbs, .footers, .cards, .accordions{
+    .typography, .logo, .images, .interactive, .navbars, .breadcrumbs, .footers, .cards, .accordions, .lists{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -224,7 +224,7 @@ code {
         font-size: 18px;
     }
 
-    .typography, .index, .logo, .images, .interactive, .breadcrumbs {
+    .typography, .index, .logo, .images, .interactive, .breadcrumbs,.lists {
         width: 156.25rem;
         height: 50.5rem;
         margin: 100px;
