@@ -7,10 +7,13 @@
     <title>Home - Design System</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="design-system.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -57,18 +60,18 @@
             <nav class="sidebar__section">
                 <h2 class="sidebar__section-heading u-h2">Navigation</h2>
                 <ul class="sidebar__nav u-h3">
-                    <li><a href="navbars.html">09 Navbars</a></li>
-                    <li><a href="breadcrumbs.html">10 Breadcrumbs</a></li>
-                    <li><a href="combine.html">11 Pagination</a></li>
+                    <li><a href="#navbars">09 Navbars</a></li>
+                    <li><a href="#breadcrumbs">10 Breadcrumbs</a></li>
+                    <li><a href="#pagination">11 Pagination</a></li>
                 </ul>
             </nav>
             <nav class="sidebar__section">
                 <h2 class="sidebar__section-heading u-h2">Blocks</h2>
                 <ul class="sidebar__nav u-h3">
-                    <li><a href="combine.html">12 Hero</a></li>
-                    <li><a href="combine.html">13 Carousel</a></li>
+                    <li><a href="#hero">12 Hero</a></li>
+                    <li><a href="#carousel">13 Carousel</a></li>
                     <li><a href="#slats">14 Slats</a></li>
-                    <li><a href="footers.html">15 Footer</a></li>
+                    <li><a href="#footer">15 Footer</a></li>
                 </ul>
             </nav>
             <nav class="sidebar__section">
@@ -82,22 +85,53 @@
             </nav>
         </aside>
 
-        <!-- Typography -->
-        <section class="typography">
-            <!-- Heading 1 -->
-            <h1 class="typography__h1 u-h1">Heading 1</h1>
-
-            <!-- Heading 2 -->
-            <h2 class="typography__h2 u-h2">Heading 2</h2>
-
-            <!-- Heading 3 -->
-            <h3 class="typography__h3 u-h3">Heading 3</h3>
-
-            <!-- Paragraph -->
-            <p class="typography__para u-h4">Para: ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
-
-            <!-- Small Text -->
-            <p class="typography__sm u-sm-text">Small Text: ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+        <!-- Footers -->
+        <section class="forms">
+            <form class="gift__form">
+                <div class="gift__form-content">
+                    <label for="From">From</label>
+                    <input type="text" id="from" name="from" required>
+                </div>
+                <div class="gift__form-content">
+                    <label for="To">To</label>
+                    <input type="text" id="to" name="to" required>
+                </div>
+                <div class="gift__form-content">
+                    <label for="Email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="gift__form-content">
+                    <label for="Message">Message</label>
+                    <textarea id="message" name="message" cols="30" rows="5" required></textarea>
+                </div>
+                <button class="button btn-primary" type="submit">Submit</button>
+            </form>
+            <p>Code for Form</p>
+            <div class="code-snippet">
+                <pre>
+                    <code>
+        &lt;form class="gift__form"&gt;
+        &lt;div class="gift__form-content"&gt;
+            &lt;label for="From"&gt;From&lt;/label&gt;
+            &lt;input type="text" id="from" name="from" required&gt;
+        &lt;/div&gt;
+        &lt;div class="gift__form-content"&gt;
+            &lt;label for="To"&gt;To&lt;/label&gt;
+            &lt;input type="text" id="to" name="to" required&gt;
+        &lt;/div&gt;
+        &lt;div class="gift__form-content"&gt;
+            &lt;label for="Email"&gt;Email&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" required&gt;
+        &lt;/div&gt;
+        &lt;div class="gift__form-content"&gt;
+            &lt;label for="Message"&gt;Message&lt;/label&gt;
+            &lt;textarea id="message" name="message" cols="30" rows="5" required&gt;&lt;/textarea&gt;
+        &lt;/div&gt;
+        &lt;button class="button btn-primary" type="submit"&gt;Submit&lt;/button&gt;
+        &lt;/form&gt;
+                    </code>
+                </pre>
+            </div>
 
         </section>
     </div>

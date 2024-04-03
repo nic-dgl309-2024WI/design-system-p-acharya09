@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Design System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="design-system.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Logo and Hamburger Menu -->
+    <nav class="navbar">
+        <div class="navbar navbar--top">
+            <div class="navbar__logo u-h1">
+                <a href="index.html">Design System</a>
+            </div>
+            <button class="navbar__hamburger-icon">&#9776;</button>
+            <button class="navbar__close-button">&#10006;</button>
+        </div>
+
+        <!-- Top Navbar -->
+        <div class="navbar navbar--top">
+            <ul class="navbar__nav-links">
+                <li><a href="about-me.html">About Me</a></li>
+                <li><a href="index.html">Demo Site</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Side Navbar -->
+    <div class="container">
+        <aside class="sidebar">
+            <nav class="sidebar__section">
+                <h2 class="sidebar__section-heading u-h2">Branding</h2>
+                <ul class="sidebar__nav u-h3">
+                    <li><a href="colours.html">01 Colours</a></li>
+                    <li class="active"><a href="typography.html">02 Typography</a></li>
+                    <li><a href="#logo">03 Logo</a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar__section">
+                <h2 class="sidebar__section-heading u-h2">Utilities</h2>
+                <ul class="sidebar__nav u-h3">
+                    <li><a href="spacing.html">04 Spacing</a></li>
+                    <li><a href="containers.html">05 Containers</a></li>
+                    <li><a href="#images">06 Images</a></li>
+                    <li><a href="#interactive">07 Interactive</a></li>
+                    <li><a href="#feedback">08 Feedback</a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar__section">
+                <h2 class="sidebar__section-heading u-h2">Navigation</h2>
+                <ul class="sidebar__nav u-h3">
+                    <li><a href="#navbars">09 Navbars</a></li>
+                    <li><a href="#breadcrumbs">10 Breadcrumbs</a></li>
+                    <li><a href="#pagination">11 Pagination</a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar__section">
+                <h2 class="sidebar__section-heading u-h2">Blocks</h2>
+                <ul class="sidebar__nav u-h3">
+                    <li><a href="#hero">12 Hero</a></li>
+                    <li><a href="#carousel">13 Carousel</a></li>
+                    <li><a href="#slats">14 Slats</a></li>
+                    <li><a href="#footer">15 Footer</a></li>
+                </ul>
+            </nav>
+            <nav class="sidebar__section">
+                <h2 class="sidebar__section-heading u-h2">Components</h2>
+                <ul class="sidebar__nav u-h3">
+                    <li><a href="#cards">16 Cards</a></li>
+                    <li><a href="#forms">17 Forms</a></li>
+                    <li><a href="#accordion">18 Accordion</a></li>
+                    <li><a href="#lists">19 Lists</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Cards -->
+        <section class="cards">
+            <label for="Cards 1">Cards 1</label>
+            <div class="product__card l-flex l-flex-column l-flex-center">
+                <img src="./images/example.png" class="product__image imgs" alt="Example">
+                <div class="product__content l-flex l-flex-column l-flex-center">
+                    <h4 class="product__content-heading card-title u-h4">Heading</h4>
+                    <p class="product__content-text card-text u-para">Text Here</p>
+                    <button class="product__button button btn-secondary">Button</button>
+                </div>
+            </div>
+            <p>Code for Above Card</p>
+            <div class="code-snippet">
+                <pre>
+                    <code>
+        //Code Starts Here
+        &lt;div class="product__card l-flex l-flex-column l-flex-center"&gt;
+        &lt;img src="./images/example.png" class="product__image imgs" alt="Example"&gt;
+        &lt;div class="product__content l-flex l-flex-column l-flex-center"&gt;
+            &lt;h4 class="product__content-heading card-title u-h4"&gt;Heading&lt;/h4&gt;
+            &lt;p class="product__content-text card-text u-para"&gt;Text Here&lt;/p&gt;
+            &lt;button class="product__button button btn-secondary"&gt;Button&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+                    </code>
+                </pre>
+                
+            </div>
+            <label class="l-m-3" for="Cards 2">Cards 2</label>
+            <div class="testimonial__content l-flex l-m-1">
+                <img class="testimonial__image imgs" src="images/example.png" alt="Example">
+                <div class="testimonial__info l-mt-3 l-p-1 l-flex l-flex-column l-flex-center">
+                    <h4 class="u-h4">Name</h4>
+                    <p class="u-para">Description</p>
+                </div>
+            </div>
+            <p>Code for Above Card</p>
+            <div class="code-snippet">
+                <pre>
+                    <code>
+        //Code Starts Here
+        &lt;div class="testimonial__content l-flex"&gt;
+        &lt;img class="testimonial__image imgs" src="images/example.png" alt="Example"&gt;
+        &lt;div class="testimonial__info l-mt-3 l-p-1 l-flex l-flex-column l-flex-center"&gt;
+            &lt;h4 class="u-h4"&gt;Name&lt;/h4&gt;
+            &lt;p class="u-para"&gt;Description&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+                    </code>
+                </pre>
+                
+            </div>
+
+        </section>
+    </div>
+    <script src="design-system.js"></script>
+</body>
+
+</html>
