@@ -1,9 +1,10 @@
 /* Global style */
 :root {
   /* color variable declare */
-    --clr-primary-bg: #7CB5EE; /* primary background color */
-    --clr-secondary-bg: #BED0EC; /*  secondary background color */
-    --clr-accent: #0072C6; /* accent color */
+    --clr-primary-bg: #51e96f; /* primary background color */
+    
+    --clr-secondary-bg: #c6af8d; /*  secondary background color */
+    --clr-accent: #bed0ec; /* accent color */
     --clr-primary-text: #0B0B0B; /* dark text color */
     --clr-secondary-text: #FFFFFF; /* white text color */
 
@@ -96,6 +97,7 @@ body{
   width: auto;
   height: auto;
   max-height: 3.125rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Utility class */
@@ -578,6 +580,7 @@ body{
 
 /* About Section */
 .about{
+  background-color: var(--clr-secondary-bg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -619,6 +622,7 @@ body{
   width: 100%;
   height: 60%;
   transition: transform 0.3s ease;
+  border-radius: 0%;
 }
 
 .product__image:hover{
@@ -779,9 +783,9 @@ button.next {
 }
 
 .footer{
-  background-image: url("images/background-contact.jpeg");
   background-size: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 50% 50% 0 0;
 }
 
 /* Additional CSS */
@@ -908,5 +912,7 @@ button.next {
   }
   
 }
+
+
 
 
