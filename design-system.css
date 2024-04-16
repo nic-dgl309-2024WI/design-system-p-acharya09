@@ -176,7 +176,7 @@ code {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: var(--clr-primary-bg); /* Set primary background color */
+        background-color: var(--clr-secondary-bg); /* Set primary background color */
         color: var(--clr-primary-text); /* Set primary text color */
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin: 0.8rem;

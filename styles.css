@@ -657,14 +657,15 @@ button.next {
 /* Services */
 .services{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 50% 50% 0 0;
+  background-color: var(--clr-secondary-bg);
 }
 
 .services__icon {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: var(--clr-secondary-bg); 
+  background-color: var(--clr-primary-bg); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -678,7 +679,7 @@ button.next {
 
 .services__icon:hover {
   transform: scale(1.1);
-  background-color: var(--clr-secondary-bg); 
+  background-color: var(--clr-accent); 
 }
 
 
@@ -783,7 +784,7 @@ button.next {
 }
 
 .footer{
-  background-size: cover;
+  background-color: var(--clr-secondary-bg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 50% 50% 0 0;
 }
@@ -823,7 +824,7 @@ button.next {
     display: flex;
     justify-content : space-between;
     align-items: center;
-    background-color: var(--clr-primary-bg);
+    background-color: var(--clr-secondary-bg);
     color: var(--clr-primary-text);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 0.8rem;
