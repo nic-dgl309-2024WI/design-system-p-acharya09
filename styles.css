@@ -476,6 +476,10 @@ body{
   background-color: var(--clr-accent);
 }
 
+.buttons-wrapper{
+  padding: 10px;
+}
+
 /* Container */
 
 .l-max-width-desktop {
@@ -500,29 +504,37 @@ body{
 
 /* Logo */
 .logo-color {
-  width: 8rem;
+  width: 10rem;
   height: auto;
 }
 
 .logo-bw{
-  width: 8rem;
+  width: 10rem;
   height: auto;
 }
 
 /* Navigation CSS */
 .navigation__hamburger-btn{
   display: block;
+  font-size: 2rem;
 }
 
 .navigation__close-btn{
   display: none;
+  font-size: 2rem;
 }
 
 .navigation__menu{
+  padding: 0 1.5rem;
   display: none;
 }
 
 /* Hero Carousel CSS */
+.hero__image{
+  width: 100%;
+  padding: 10px;
+}
+
 .hero__carousel {
   width: 100%;
   overflow: hidden;
@@ -685,7 +697,7 @@ button.next {
 
 /* Resources */
 .resources{
-  background-image: url("images/background.jpeg");
+  background-image: url("images/plants3.webp");
   background-size: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -818,6 +830,7 @@ button.next {
   .navigation__menu{
     display: flex;
     justify-content: space-around;
+    font-size: 1.5rem;
   }
 
   .navigation{
@@ -843,6 +856,7 @@ button.next {
   /* Hero Section */
   .hero__image{
     width: 100%;
+    padding: 10px;
   }
 
   .hero__carousel-content{
