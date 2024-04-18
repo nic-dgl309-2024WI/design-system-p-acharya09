@@ -554,7 +554,7 @@ body{
 }
 
 .hero__carousel-inner {
-  transition: transform 0.5s ease;
+  transition: transform 3s ease;
 }
 
 .hero__carousel-item {

@@ -70,7 +70,7 @@ for (let i = 0; i < totalItems; i++) {
     pagination.appendChild(dot);
 }
 
-setInterval(nextSlide, 3000); // Change slide every 3 seconds
+setInterval(nextSlide, 5000); // Change slide every 3 seconds
 
 let currentSlide = 0;
 const totalSlides = document.querySelectorAll('.carousel-items').length;
