@@ -513,6 +513,11 @@ body{
   height: auto;
 }
 
+/* Icon-class */
+.icon-class {
+  font-size: 1.5rem;
+}
+
 /* Navigation CSS */
 .navigation__hamburger-btn{
   display: block;
@@ -597,7 +602,7 @@ body{
 }
 
 .about__content{
-  text-align: justify;
+  text-align: center;
 }
 
 /* Product Carousel */
@@ -685,6 +690,12 @@ button.next {
   transition: transform 0.3s ease;
 }
 
+.services__label{
+  opacity: 0.4;
+  display: flex;
+  justify-content: center;
+}
+
 .services__icon i {
   color: var(--clr-primary-text); 
 }
@@ -694,6 +705,9 @@ button.next {
   background-color: var(--clr-accent); 
 }
 
+.services__label:hover{
+  opacity: 1;
+}
 
 /* Resources */
 .resources{
@@ -754,7 +768,7 @@ button.next {
 } 
 
 .testimonial__info p{
-  text-align: justify;
+  text-align: center;
 }
 
 /* Gift Certificates */
@@ -803,7 +817,6 @@ button.next {
 
 /* Additional CSS */
 .navigation__item:hover{
-  text-decoration: underline;
   background-color: var(--clr-primary-bg);
   padding:5px;
   border-radius: 8px;
@@ -832,7 +845,7 @@ button.next {
   .navigation__menu{
     display: flex;
     justify-content: space-around;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .navigation{
@@ -851,8 +864,15 @@ button.next {
     align-items: center;
   }
 
-  .navigation__item, .navigation__icon{
+  .navigation__item{
     margin: 2rem;
+
+  }
+
+  .navigation__icon{
+    margin: 2rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
   }
 
   /* Hero Section */
