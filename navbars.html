@@ -87,67 +87,69 @@
 
         <!-- Navbars -->
         <section class="navbars">
-            <label for="Navbar">Navbars</label>
-            <nav class="navigation">
-                <div class="navigation__header l-flex l-flex-between l-flex-center">
-                    <div class="logo-wrapper">
-                        <img class="navigation__logo logo-color imgs" src="images/logo.png" alt="Logo">
+            <h2 class="u-h2 l-m-1">Navbars</h2>
+            <div class="navbars_list">
+                <nav class="navigation">
+                    <div class="navigation__header l-flex l-flex-between l-flex-center">
+                        <div class="logo-wrapper">
+                            <img class="navigation__logo logo-color imgs" src="images/logo.png" alt="Logo">
+                        </div>
+                        <div class="buttons-wrapper">
+                            <button class="navigation__hamburger-btn" onclick="toggleMenu(true)">&#9776;</button>
+                            <button class="navigation__close-btn" onclick="toggleMenu(false)">&#10006;</button>
+                        </div>
                     </div>
-                    <div class="buttons-wrapper">
-                        <button class="navigation__hamburger-btn" onclick="toggleMenu(true)">&#9776;</button>
-                        <button class="navigation__close-btn" onclick="toggleMenu(false)">&#10006;</button>
-                    </div>
-                </div>
-
-                <div class="navigation__menu">
-                    <ul class="navigation__list">
-                        <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Products</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Services</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Resources</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Contacts</a></li>
-                    </ul>
-                    <i class="navigation__icon">Icon</i>
-                </div>
-            </nav>
-            <p>Code for Navbar</p>
-            <div class="code-snippet">
-                <pre>
-                    <code>
-        //Code Starts Here
-        &lt;nav class="navigation"&gt;
-            &lt;div class="navigation__header l-flex 
-            l-flex-between l-flex-center"&gt;
-                &lt;div class="logo-wrapper"&gt;
-                    &lt;img class="navigation__logo logo-color imgs" 
-                    src="images/logo.png" alt="Logo"&gt;
-                &lt;/div&gt;
-                &lt;div class="buttons-wrapper"&gt;
-                    &lt;button class="navigation__hamburger-btn" 
-                    onclick="toggleMenu(true)"&gt;&#9776;&lt;/button&gt;
-                    &lt;button class="navigation__close-btn" 
-                    onclick="toggleMenu(false)"&gt;&#10006;&lt;/button&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
     
-            &lt;div class="navigation__menu"&gt;
-                &lt;ul class="navigation__list"&gt;
-                    &lt;li class="navigation__item"&gt;&lt;a href="#" 
-                    class="navigation__link"&gt;About Us&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class="navigation__item"&gt;&lt;a href="#" 
-                    class="navigation__link"&gt;Products&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class="navigation__item"&gt;&lt;a href="#" 
-                    class="navigation__link"&gt;Services&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class="navigation__item"&gt;&lt;a href="#" 
-                    class="navigation__link"&gt;Resources&lt;/a&gt;&lt;/li&gt;
-                    &lt;li class="navigation__item"&gt;&lt;a href="#" 
-                    class="navigation__link"&gt;Contacts&lt;/a&gt;&lt;/li&gt;
-                &lt;/ul&gt;
-                &lt;i class="navigation__icon"&gt;Icon&lt;/i&gt;
-            &lt;/div&gt;
-        &lt;/nav&gt;
-                    </code>
-                </pre>
+                    <div class="navigation__menu">
+                        <ul class="navigation__list" style="font-size: 0.8rem;">
+                            <li class="navigation__item"><a href="#" class="navigation__link">About Us</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Products</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Services</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Resources</a></li>
+                            <li class="navigation__item"><a href="#" class="navigation__link">Contacts</a></li>
+                        </ul>
+                        <i class="navigation__icon">Icon</i>
+                    </div>
+                </nav>
+                <p>Code for Navbar</p>
+                <div class="code-snippet">
+                    <pre>
+                        <code>
+            //Code Starts Here
+            &lt;nav class="navigation"&gt;
+                &lt;div class="navigation__header l-flex 
+                l-flex-between l-flex-center"&gt;
+                    &lt;div class="logo-wrapper"&gt;
+                        &lt;img class="navigation__logo logo-color imgs" 
+                        src="images/logo.png" alt="Logo"&gt;
+                    &lt;/div&gt;
+                    &lt;div class="buttons-wrapper"&gt;
+                        &lt;button class="navigation__hamburger-btn" 
+                        onclick="toggleMenu(true)"&gt;&#9776;&lt;/button&gt;
+                        &lt;button class="navigation__close-btn" 
+                        onclick="toggleMenu(false)"&gt;&#10006;&lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+        
+                &lt;div class="navigation__menu"&gt;
+                    &lt;ul class="navigation__list"&gt;
+                        &lt;li class="navigation__item"&gt;&lt;a href="#" 
+                        class="navigation__link"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class="navigation__item"&gt;&lt;a href="#" 
+                        class="navigation__link"&gt;Products&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class="navigation__item"&gt;&lt;a href="#" 
+                        class="navigation__link"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class="navigation__item"&gt;&lt;a href="#" 
+                        class="navigation__link"&gt;Resources&lt;/a&gt;&lt;/li&gt;
+                        &lt;li class="navigation__item"&gt;&lt;a href="#" 
+                        class="navigation__link"&gt;Contacts&lt;/a&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;i class="navigation__icon"&gt;Icon&lt;/i&gt;
+                &lt;/div&gt;
+            &lt;/nav&gt;
+                        </code>
+                    </pre>
+                </div>
             </div>
 
         </section>

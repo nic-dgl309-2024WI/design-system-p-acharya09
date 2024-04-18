@@ -237,7 +237,7 @@ code {
         font-size: 18px;
     }
 
-    .typography_list, .images_list {
+    .typography_list, .images_list, .navbars_list {
         display: flex;
         flex-direction: column;
         align-items: center;
