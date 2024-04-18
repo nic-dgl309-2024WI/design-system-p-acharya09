@@ -102,14 +102,7 @@ code {
         flex-direction: column;
     }
 
-    .color{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .typography, .logo, .images, .interactive, .navbars, .breadcrumbs, .footers, .cards, .accordions, .lists{
+    .typography, .logo, .images, .interactive, .navbars, .breadcrumbs, .footers, .cards, .accordions, .lists,.color{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -143,24 +136,24 @@ code {
     }
     
     .color-swatch--primary-bg {
-        background-color: #7CB5EE;
+        background-color: var(--clr-primary-bg);
     }
     
     .color-swatch--secondary-bg {
-        background-color: #BED0EC;
+        background-color: var(--clr-secondary-bg);
     }
     
     .color-swatch--accent {
-        background-color: #0072C6;
+        background-color: var(--clr-accent);
     }
     
     .color-swatch--primary-text {
-        background-color: #0B0B0B;
+        background-color: var(--clr-primary-text);
         color: #fff;
     }
     
     .color-swatch--secondary-text {
-        background-color: #FFFFFF;
+        background-color: var(--clr-secondary-text);
         color: #0B0B0B;
     }
 }
@@ -208,10 +201,6 @@ code {
         background-color: var(--clr-primary-bg); /* Set secondary background color */
     }
 
-    .color{
-        display: flex;
-    }
-
     .color-swatch {
         width: 200px;
         height: 150px;
@@ -224,7 +213,7 @@ code {
         font-size: 18px;
     }
 
-    .typography, .index, .logo, .images, .interactive, .breadcrumbs,.lists {
+    .typography, .index, .logo, .images, .interactive, .breadcrumbs,.lists,.color {
         width: 156.25rem;
         height: 50.5rem;
         margin: 100px;
@@ -314,24 +303,24 @@ code {
     }
     
     .color-swatch--primary-bg {
-        background-color: #7CB5EE;
+        background-color: var(--clr-primary-bg);
     }
     
     .color-swatch--secondary-bg {
-        background-color: #BED0EC;
+        background-color: var(--clr-secondary-bg);
     }
     
     .color-swatch--accent {
-        background-color: #0072C6;
+        background-color: var(--clr-accent);
     }
     
     .color-swatch--primary-text {
-        background-color: #0B0B0B;
+        background-color: var(--clr-primary-text);
         color: #fff;
     }
     
     .color-swatch--secondary-text {
-        background-color: #FFFFFF;
+        background-color: var(--clr-secondary-text);
         color: #0B0B0B;
     }
 }

@@ -5,8 +5,8 @@
     
     --clr-secondary-bg: #c6af8d; /*  secondary background color */
     --clr-accent: #bed0ec; /* accent color */
-    --clr-primary-text: #0B0B0B; /* dark text color */
-    --clr-secondary-text: #FFFFFF; /* white text color */
+    --clr-primary-text: #0b0b0b; /* dark text color */
+    --clr-secondary-text: #ffffff; /* white text color */
 
   /* fonts declare */
     --heading-font-family: 'Roboto', sans-serif;
@@ -816,10 +816,8 @@ button.next {
 }
 
 /* Additional CSS */
-.navigation__item:hover{
-  background-color: var(--clr-primary-bg);
-  padding:5px;
-  border-radius: 8px;
+.navigation__link:hover{
+  color: var(--clr-accent);
 }
 
 #about-para{
