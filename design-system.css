@@ -64,6 +64,9 @@ code {
     color: #0f0;
 }
 
+.text_center{
+    text-align: center;
+}
 
 /* Mobile View */
 @media only screen and (max-width: 768px) {
@@ -102,7 +105,7 @@ code {
         flex-direction: column;
     }
 
-    .typography, .logo, .images, .interactive, .navbars, .breadcrumbs, .footers, .cards, .accordions, .lists,.color{
+    .typography, .logo, .images, .interactive, .navbars, .breadcrumbs, .footers, .cards, .accordions, .lists, .color, .spacing{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -279,15 +282,23 @@ code {
         justify-content: center;
         font-size: 18px;
     }
-    .spacing {
+    .spacing_list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 18px;
+    }
+
+    .spacing{
         width: 156.25rem;
         height: 112.5rem;
         margin: 100px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
         font-size: 18px;
     }
 
