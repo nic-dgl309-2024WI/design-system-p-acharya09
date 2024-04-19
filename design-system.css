@@ -113,7 +113,7 @@ code {
         flex-direction: column;
     }
 
-    .typography, .logo, .images, .interactive, .navbars, .breadcrumbs, .footers, .cards, .accordions, .lists, .color, .spacing, .forms{
+    .typography, .logo, .images, .interactive, .navbars, .breadcrumbs, .footers, .cards, .accordions, .lists, .color, .spacing, .forms, .index{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
