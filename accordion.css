@@ -1,20 +1,20 @@
-.tabcontent{
+.l-tabcontent{
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .tablinks{
+  .c-tablinks{
     margin: 1rem;
   }
   
-  .aordion-item{
+  .c-accordion__item{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .accordion-content {
+  .l-accordion__content {
     display: none;
   }
   
-  .accordion-btn.active {
+  .c-accordion__btn.active {
     background-color: var(--clr-accent);
   }

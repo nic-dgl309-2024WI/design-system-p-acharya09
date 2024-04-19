@@ -22,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // Hero Items  
-const carouselInner = document.querySelector('.hero__carousel-inner');
-const carouselItems = document.querySelectorAll('.hero__carousel-item');
-const pagination = document.querySelector('.hero__pagination');
+const carouselInner = document.querySelector('.c-carousel__inner');
+const carouselItems = document.querySelectorAll('.c-carousel__item');
+const pagination = document.querySelector('.c-pagination');
 
 let currentIndex = 0;
 const totalItems = carouselItems.length;
@@ -75,18 +75,38 @@ for (let i = 0; i < totalItems; i++) {
     pagination.appendChild(dot);
 }
 
-setInterval(nextSlide, 3000); // Change slide every 3 seconds
+setInterval(nextSlide, 5000); // Change slide every 3 seconds
+
+let currentSlide = 0;
+const totalSlides = document.querySelectorAll('.c-carousel2__items').length;
+
+function moveCarousel(direction) {
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    updateCarousel();
+}
+
+function updateCarousel() {
+    const carouselItems = document.querySelectorAll('.c-carousel2__items');
+    carouselItems.forEach((item, index) => {
+        if (index === currentSlide) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+}
 
 
+// Function to open a specific tab
 function openTab(event, tabId) {
     // Hide all tab contents
-    const tabContents = document.querySelectorAll('.tabcontent');
+    const tabContents = document.querySelectorAll('.l-tabcontent');
     tabContents.forEach(tabContent => {
         tabContent.style.display = 'none';
     });
 
     // Remove 'active' class from all tab links
-    const tabLinks = document.querySelectorAll('.tablinks');
+    const tabLinks = document.querySelectorAll('.c-tablinks');
     tabLinks.forEach(tabLink => {
         tabLink.classList.remove('active');
     });
@@ -100,10 +120,10 @@ function openTab(event, tabId) {
 
 // Set the default tab to be open
 document.getElementById('defaultOpen').click();
-  
+
 
 document.addEventListener('DOMContentLoaded', function() {
-    const accordionBtns = document.querySelectorAll('.accordion-btn');
+    const accordionBtns = document.querySelectorAll('.c-accordion__btn');
 
     accordionBtns.forEach(btn => {
         btn.addEventListener('click', function() {
