@@ -91,6 +91,14 @@ code {
         order: -1;
     }
 
+    .navbar__hamburger-icon{
+        font-size: 2rem;
+    }
+
+    .navbar__close-button{
+        font-size: 2rem;
+    }
+
     .sidebar{
         background-color: var(--clr-secondary-bg); /* Set secondary background color */
         color: var(--clr-secondary-text); /* Set secondary text color */
