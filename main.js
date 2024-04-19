@@ -1,8 +1,8 @@
 // Navigation Menu
 function toggleMenu(show) {
-    const navMenu = document.querySelector('.navigation__menu');
-    const hamburgerBtn = document.querySelector('.navigation__hamburger-btn');
-    const closeBtn = document.querySelector('.navigation__close-btn');
+    const navMenu = document.querySelector('.c-navigation__menu');
+    const hamburgerBtn = document.querySelector('.c-navigation__hamburger-btn');
+    const closeBtn = document.querySelector('.c-navigation__close-btn');
 
     if (show) {
         navMenu.style.display = 'block';
@@ -17,9 +17,9 @@ function toggleMenu(show) {
 
 
 // Hero Items  
-const carouselInner = document.querySelector('.hero__carousel-inner');
-const carouselItems = document.querySelectorAll('.hero__carousel-item');
-const pagination = document.querySelector('.hero__pagination');
+const carouselInner = document.querySelector('.c-carousel__inner');
+const carouselItems = document.querySelectorAll('.c-carousel__item');
+const pagination = document.querySelector('.c-pagination');
 
 let currentIndex = 0;
 const totalItems = carouselItems.length;
@@ -73,7 +73,7 @@ for (let i = 0; i < totalItems; i++) {
 setInterval(nextSlide, 5000); // Change slide every 3 seconds
 
 let currentSlide = 0;
-const totalSlides = document.querySelectorAll('.carousel-items').length;
+const totalSlides = document.querySelectorAll('.c-carousel2__items').length;
 
 function moveCarousel(direction) {
     currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
@@ -81,7 +81,7 @@ function moveCarousel(direction) {
 }
 
 function updateCarousel() {
-    const carouselItems = document.querySelectorAll('.carousel-items');
+    const carouselItems = document.querySelectorAll('.c-carousel2__items');
     carouselItems.forEach((item, index) => {
         if (index === currentSlide) {
             item.classList.add('active');
@@ -95,13 +95,13 @@ function updateCarousel() {
 // Function to open a specific tab
 function openTab(event, tabId) {
     // Hide all tab contents
-    const tabContents = document.querySelectorAll('.tabcontent');
+    const tabContents = document.querySelectorAll('.l-tabcontent');
     tabContents.forEach(tabContent => {
         tabContent.style.display = 'none';
     });
 
     // Remove 'active' class from all tab links
-    const tabLinks = document.querySelectorAll('.tablinks');
+    const tabLinks = document.querySelectorAll('.c-tablinks');
     tabLinks.forEach(tabLink => {
         tabLink.classList.remove('active');
     });
@@ -118,7 +118,7 @@ document.getElementById('defaultOpen').click();
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    const accordionBtns = document.querySelectorAll('.accordion-btn');
+    const accordionBtns = document.querySelectorAll('.c-accordion__btn');
 
     accordionBtns.forEach(btn => {
         btn.addEventListener('click', function() {
@@ -140,8 +140,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Get testimonials and pagination buttons
-const testimonials = document.querySelectorAll('.testimonial__content');
-const paginationButtons = document.querySelectorAll('.testimonial__pagination button');
+const testimonials = document.querySelectorAll('.l-testimonial__content');
+const paginationButtons = document.querySelectorAll('.c-pagination2 button');
 
 // Set current page and testimonials per page
 let currentPage = 0;

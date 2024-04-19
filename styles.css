@@ -84,7 +84,7 @@ body{
   line-height: 1.6;
 }
 
-.button{
+.c-button{
   text-align: center;
   flex-shrink: 0;
   padding: 10px 20px;
@@ -458,25 +458,25 @@ body{
 
 /* Buttons */
 
-.btn-primary{
+.c-btn-primary{
   background-color: var(--clr-primary-bg);
   color: var(--clr-primary-text);
 }
 
-.btn-primary:hover{
+.c-btn-primary:hover{
   background-color: var(--clr-accent);
 }
 
-.btn-secondary{
+.c-btn-secondary{
   background-color: var(--clr-secondary-bg);
   color: var(--clr-primary-text);
 }
 
-.btn-secondary:hover{
+.c-btn-secondary:hover{
   background-color: var(--clr-accent);
 }
 
-.buttons-wrapper{
+.c-buttons-wrapper{
   padding: 20px;
 }
 
@@ -503,67 +503,70 @@ body{
 }
 
 /* Logo */
-.logo-color {
+.has-logo-color {
   width: 10rem;
   height: auto;
 }
 
-.logo-bw{
+.has-logo-bw{
   width: 10rem;
   height: auto;
 }
 
 /* Icon-class */
-.icon-class {
+.c-icon-class {
   font-size: 1.5rem;
+  margin: 2rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 /* Navigation CSS */
-.navigation__hamburger-btn{
+.c-navigation__hamburger-btn{
   display: block;
   font-size: 2rem;
 }
 
-.navigation__close-btn{
+.c-navigation__close-btn{
   display: none;
   font-size: 2rem;
 }
 
-.navigation__menu{
+.c-navigation__menu{
   padding: 0 1.5rem;
   display: none;
 }
 
 /* Hero Carousel CSS */
-.hero__image{
-  width: 100%;
-  padding: 10px;
-}
-
-.hero__carousel {
+.c-carousel {
   width: 100%;
   overflow: hidden;
   position: relative;
   margin: 0 auto;
 }
 
-.hero__description{
+.c-carousel__image{
+  width: 100%;
+  padding: 10px;
+}
+
+.c-hero__description{
   color: var(--clr-primary-text);
   background-color: var(--clr-primary-bg);
   opacity: 0.8;
 }
 
-.hero__carousel-inner {
+.c-carousel__inner {
   transition: transform 3s ease;
 }
 
-.hero__carousel-item {
+.c-carousel__item {
   position: relative;
   flex: 0 0 auto;
   width: 100%; /* Adjust this width as needed */
 }
 
-.hero__carousel-content {
+.c-carousel__content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -572,11 +575,11 @@ body{
   color: white; /* Adjust text color as needed */
 }
 
-.hero__carousel-content > div {
+.c-carousel__content > div {
   margin-bottom: 10px;
 }
 
-.hero__pagination {
+.c-pagination {
   text-align: center;
   margin-top: 10px;
 }
@@ -596,37 +599,37 @@ body{
 }
 
 /* About Section */
-.about{
+.c-about{
   background-color: var(--clr-secondary-bg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.about__content{
+.u-about__content{
   text-align: center;
 }
 
 /* Product Carousel */
-.product{
+.c-product{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.product__carousel {
+.c-carousel2 {
   position: relative;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
 
-.product__carousel-inner {
+.c-carousel2__inner {
   transition: transform 0.5s ease;
 }
 
-.product__carousel-items {
+.c-carousel2__items {
   background-color: var(--clr-secondary-bg);
   flex: 0 0 100%;
 }
 
-.product__card {
+.c-card {
   height: 100%;
   border: 2px solid var(--clr-secondary-bg);
   border-radius: 5px;
@@ -635,18 +638,18 @@ body{
   
 }
 
-.product__image {
+.c-card__image {
   width: 100%;
   height: 60%;
   transition: transform 0.3s ease;
   border-radius: 0%;
 }
 
-.product__image:hover{
+.c-card__image:hover{
   transform: scale(1.1);
 }
 
-.product__content {
+.c-card__content {
   padding: 10px;
   flex-grow: 1;
 }
@@ -672,13 +675,13 @@ button.next {
 }
 
 /* Services */
-.services{
+.c-services{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 50% 50% 0 0;
   background-color: var(--clr-secondary-bg);
 }
 
-.services__icon {
+.c-use__icon {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -690,61 +693,61 @@ button.next {
   transition: transform 0.3s ease;
 }
 
-.services__label{
+.u-services__label{
   opacity: 0.4;
   display: flex;
   justify-content: center;
 }
 
-.services__icon i {
+.c-use__icon i {
   color: var(--clr-primary-text); 
 }
 
-.services__icon:hover {
+.c-use__icon:hover {
   transform: scale(1.1);
   background-color: var(--clr-accent); 
 }
 
-.services__label:hover{
+.u-services__label:hover{
   opacity: 1;
 }
 
 /* Resources */
-.resources{
+.c-resources{
   background-image: url("images/plants3.webp");
   background-size: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.tabcontent{
+.l-tabcontent{
   background-color: var(--clr-primary-bg);
   opacity: 0.85;
   width: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.tablinks{
+.c-tablinks{
   margin: 1rem;
 }
 
-.aordion-item{
+.c-accordion-item{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.accordion-content {
+.l-accordion__content {
   display: none;
 }
 
-.accordion-btn.active {
+.c-accordion__btn.active {
   background-color: var(--clr-accent);
 }
 
 /* Testimonials */
-.testimonial{
+.c-testimonial{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.testimonial__content{
+.l-testimonial__content{
   position: relative;
   height: 100%;
   border-radius: 5px;
@@ -754,11 +757,11 @@ button.next {
   transition: transform 0.3s ease; 
 }
 
-.testimonial__content:hover{
+.l-testimonial__content:hover{
   transform: translateX(20px);
 }
 
-.testimonial__image{
+.c-testimonial__image{
   height: 5rem; 
   width: 5rem; 
   border-radius: 50%; 
@@ -767,16 +770,16 @@ button.next {
   left: 38%;
 } 
 
-.testimonial__info p{
+.l-testimonial__info p{
   text-align: center;
 }
 
 /* Gift Certificates */
-.gift{
+.c-gift{
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.gift__form {
+.c-gift__form {
   background-color: var(--clr-secondary-bg);
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -785,18 +788,18 @@ button.next {
   margin: 0 auto;
 }
 
-.gift__form-content {
+.l-gift__form-content {
   margin-bottom: 15px;
 }
 
-.gift__form-content label {
+.l-gift__form-content label {
   display: block;
   font-weight: bold;
 }
 
-.gift__form-content input[type="text"],
-.gift__form-content input[type="email"],
-.gift__form-content textarea {
+.l-gift__form-content input[type="text"],
+.l-gift__form-content input[type="email"],
+.l-gift__form-content textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -805,18 +808,18 @@ button.next {
   margin-top: 5px;
 }
 
-.gift__form-content textarea {
+.l-gift__form-content textarea {
   resize: vertical;
 }
 
-.footer{
+.c-footer{
   background-color: var(--clr-secondary-bg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 50% 50% 0 0;
 }
 
 /* Additional CSS */
-.navigation__link:hover{
+.u-navigation__link:hover{
   color: var(--clr-accent);
 }
 
@@ -824,29 +827,29 @@ button.next {
   display: none;
 }
 
-.gift__image{
+.c-gift__image{
   width:100%;
   transition: transform 0.5s ease;;
 }
 
-.gift__image:hover{
+.c-gift__image:hover{
   transform: scale(1.05);
 }
 
 /* Desktop view */
 @media only screen and (min-width: 768px) {
   /* Navigation */
-  .navigation__hamburger-btn, .navigation__close-btn{
+  .c-navigation__hamburger-btn, .c-navigation__close-btn{
     display: none;
   }
 
-  .navigation__menu{
+  .c-navigation__menu{
     display: flex;
     justify-content: space-around;
     font-size: 1.3rem;
   }
 
-  .navigation{
+  .c-navigation{
     display: flex;
     justify-content : space-between;
     align-items: center;
@@ -856,36 +859,25 @@ button.next {
     margin: 0.8rem;
   }
 
-  .navigation__list{
+  .c-navigation__list{
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
 
-  .navigation__item{
-    margin: 2rem;
-
-  }
-
-  .navigation__icon{
-    margin: 2rem;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-
   /* Hero Section */
-  .hero__image{
+  .c-carousel__image{
     width: 100%;
     padding: 10px;
   }
 
-  .hero__carousel-content{
+  .c-carousel__content{
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .hero__description{
+  .c-hero__description{
     margin-right: 6rem;
   }
 
@@ -893,25 +885,25 @@ button.next {
     display: block;
   }
 
-  .product__carousel-items {
+  .c-carousel2__items {
     background-color: var(--clr-secondary-bg);
     flex: 0 0 25%;
     margin: 3rem;
   }
 
-  .services__icon-container {
+  .l-use__icon-container {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
   }
 
-  .tab{
+  .l-tab{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;  
   }
 
-  .testimonial__content{
+  .l-testimonial__content{
     position: relative;
     height: 100%;
     border-radius: 5px;
@@ -920,7 +912,7 @@ button.next {
     background-color: var(--clr-secondary-bg);
   }
 
-  .testimonial__image{
+  .c-testimonial__image{
     height: 5rem; 
     width: 5rem; 
     border-radius: 50%; 
@@ -930,16 +922,16 @@ button.next {
   }
 
 
-  .gift__content{
+  .l-gift__content{
     display: flex;
     justify-content: center;
   }
   
-  .gift__form{
+  .c-gift__form{
     margin-left: 6rem;
   }
 
-  .footer{
+  .c-footer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
